@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="410,260">
+	<VerticalLayout enabled="true" width="410" height="260">
+		<Control name="ControlExpertImgOnExpertInfoItem" float="true" pos="0,0,0,0" enabled="true" width="200" height="200" />
+		<Label name="LabelExpertNameOnExpertInfoItem" float="true" pos="210,5,0,0" height="16" width="200" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="4" align="left"/>
+		<RichEdit name="LabelExpertJobOnExpertInfoItem" float="true" pos="210,35,0,0" enabled="false" height="120" width="134" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="10" endellipsis="true" align="left"/> 
+		<ListItemButton name="ButtonExpertDetailOnExpertInfoItem" float="true" pos="210,170,0,0" enabled="true" width="64" height="30" bkimage="Button/cont-btn-expert-detail.png"  />	
+		<ListItemButton name="ButtonToAppointExpertOnExpertInfoItem" float="true" pos="280,170,0,0" enabled="true" width="64" height="30" bkimage="Button/cont-btn-expert-toappoint.png"  />
+	</VerticalLayout>
+</Window>

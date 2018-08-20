@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="894,718">
+	<VerticalLayout width="894" height="718">
+		<VerticalLayout name="container_appointmentlist" visible="true" enabled="true" width="894" height="718" >
+			<HorizontalLayout enabled="true" width="894" height="50" bkimage="bkimage/cont-search-bg.png">
+				<Label text="按日期查询：" float="true" pos="10,0,0,0" enabled="true" width="120" height="50" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="right" />
+				<DateTime name="DateChooseOnSearchAppoint" float="true" textpadding="10,0,0,0" textcolor="#FF313131" pos="135,12,0,0" font="0" width="150" height="26" bkimage="ComboBox/databox.png" /> 
+				<Label text="按专家：" float="true" pos="300,0,0,0" enabled="true" width="85" height="50" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="right" />
+				<Combo name="ComboChooseExpertOnSearchAppoint" itemfont="0" enabled="true" mouse="true" float="true" pos="385,12,0,0" width="150" height="26" textcolor="#FF313131" textpadding="10,0,0,0" bkimage="ComboBox/Combobox.png" vscrollbar="true">
+				</Combo> 
+				<Button name="ButtonSearchAppointment"  float="true" pos="823,12,0,0" enabled="true" width="60" height="26" bkimage="Button/cont-btn-search.png" />
+			</HorizontalLayout>
+			<VerticalLayout enabled="true" width="894" height="668" bkimage="bkimage/cont-bg.png">
+				<HorizontalLayout enabled="true" width="894" height="68">
+					<Label float="true" pos="26,30,0,0" enabled="true" width="92" height="26" bkimage="Text/cont-title-WDYY.png" />
+					<Label text="预约后请到“支付记录-微信付款码”页面扫码付款。" float="true" pos="138,36,0,0" enabled="true" width="500" height="16" textcolor="#FFeb6877" disabledtextcolor="#FFA7A6AA" font="5" />
+					<Button name="ButtonMakeAppointment" float="true" pos="773,18,0,0" enabled="true" width="110" height="34" bkimage="Button/cont-btn-WYYY.png" />
+				</HorizontalLayout>				
+				<List name="ListAppointments" float="true" pos="4,68,0,0"  header="true" itemfont="1" itemalign="center" vscrollbar="true" itemhlinesize="1" bkcolor="#FFFFFFFF" itembkcolor="#FFf6f8fb" itemhlinecolor="#FFe3e4e8" enabled="true" width="886" height="540" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" itemaltbk="true" >
+				<ListHeader name="domain" bkimage="bkimage/table-head-bg.png" >
+						<ListHeaderItem text="预约时间" font="0" endellipsis="true" textcolor="#ffffffff" align="center" width="222" height="40" minwidth="16"  sepwidth="1" align="center"  />
+						<ListHeaderItem text="专家" font="0" endellipsis="true" textcolor="#ffffffff"  align="center" width="132" height="40" minwidth="16"  sepwidth="1" align="center"  />
+						<ListHeaderItem text="患者" font="0" endellipsis="true" textcolor="#ffffffff"  align="center" width="142" height="40" minwidth="16"  sepwidth="1" align="center"  />           
+						<ListHeaderItem text="状态" font="0" endellipsis="true" textcolor="#ffffffff"  align="center" width="142" height="40" minwidth="16"  sepwidth="1" align="center"  />			
+						<ListHeaderItem text="操作" font="0" endellipsis="true" textcolor="#ffffffff"  align="center" width="248" height="40" minwidth="16"  sepwidth="1" align="center"  />		
+				</ListHeader>	
+				</List>				
+				<HorizontalLayout enabled="true" float="true" pos="0,600,0,0" width="894" height="60">
+					<Button name="ButtonFirstPageOfApppont"  float="true" pos="337,20,0,0" enabled="true" width="48" height="24" bkimage="Button/cont-btn-list-a.png" />
+					<Button name="ButtonPreviousPageOfApppont"  float="true" pos="388,20,0,0" enabled="true" width="58" height="24" bkimage="Button/cont-btn-list-b.png" />
+					<Button name="ButtonNextPageOfApppont"  float="true" pos="449,20,0,0" enabled="true" width="58" height="24" bkimage="Button/cont-btn-list-c.png" />
+					<Button name="ButtonEndPageOfApppont"  float="true" pos="510,20,0,0" enabled="true" width="48" height="24" bkimage="Button/cont-btn-list-d.png" />
+					<Label text="共" float="true" pos="725,25,0,0" enabled="true" width="16" height="14" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="right" />
+					<Label name="LabelPageNumOnAppoint" text="120" float="true" pos="741,25,0,0" enabled="true" width="25" height="14" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="center" />
+					<Label text="页 当前第" float="true" pos="766,25,0,0" enabled="true" width="70" height="14" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="center" />
+					<Label name="LabelCurrentPageNumOnAppoint" text="120" float="true" pos="836,25,0,0" enabled="true" width="25" height="14" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="center" />
+					<Label text="页" float="true" pos="861,25,0,0" enabled="true" width="16" height="14" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="right" />
+				</HorizontalLayout>
+			</VerticalLayout>
+		</VerticalLayout>
+		
+		<VerticalLayout name="container_toappoint" visible="false" enabled="true" width="894" height="718" bkimage="bkimage/cont-bg-2.png">
+			<HorizontalLayout enabled="true" width="894" height="68">
+				<Label float="true" pos="26,30,0,0" enabled="true" width="92" height="26" bkimage="Text/cont-title-WYYY.png" />
+				<Button name="ButtonReturnToAppointListOnToAppoint"  float="true" pos="772,37,0,0" enabled="true" width="107" height="15" bkimage="Button/cont-btn-back-B.png" />
+			</HorizontalLayout>
+			<VerticalLayout enabled="true" float="true" pos="4,68,0,0" width="886" height="650" bordercolor="FFe3e4e8" bkcolor="#FFFFFFFF" bordersize="1" borderround="5,5"  vscrollbar="true">
+				<HorizontalLayout enabled="true" width="886" height="45">
+					<Label text="基本信息" float="true" pos="22,16,0,0" enabled="true" width="200" height="16" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="5" />
+					<Label float="true" pos="14,16,0,0"  width="2" height="16" bkcolor="#ff00a0e9" />
+				</HorizontalLayout>
+				<HorizontalLayout width="886" height="1" >
+					<Label float="true" pos="22,0,0,0" enabled="true" width="842" height="1" bkcolor="FFe3e4e8" />
+				</HorizontalLayout>					
+				<HorizontalLayout enabled="true" width="886" height="65">
+					<Label text="请选择专家" float="true" pos="54,29,0,0" enabled="true" width="84" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Combo name="ComboChooseExpertOnToAppoint" itemfont="1" textpadding="10,0,0,0" float="true" pos="138,29,0,0" enabled="true" width="290" height="36" textcolor="#FF313131" bkimage="ComboBox/choose-expert.png" vscrollbar="true">
+					</Combo>
+				</HorizontalLayout>
+				<HorizontalLayout enabled="true" width="886" height="50">
+					<Label text="会诊时间" float="true" pos="54,14,0,0" enabled="true" width="84" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="1" />
+					<DateTime name="DateChooseOnToAppoint" float="true" textpadding="10,0,0,0" pos="138,14,0,0" enabled="true" font="1"  width="290" height="36" textcolor="#FF313131" bkimage="ComboBox/choose-data.png" />
+					<Button name="ButtonSearchFreeTimeOnToAM" float="true" pos="448,14,0,0" bkimage="Button/check-appoint-time.png" />
+				</HorizontalLayout>
+				<HorizontalLayout enabled="true" width="886" height="26">
+					<Label text="注意：目前只接受7天内的预约，每次预约仅能选择一个时段。" float="true" pos="138,14,0,0" enabled="true" width="500" height="12" textcolor="#FFeb6877" disabledtextcolor="#FFA7A6AA" font="10" />
+				</HorizontalLayout>	
+				<HorizontalLayout enabled="true" width="886" height="17"/>
+				<HorizontalLayout name="LayOfMorningTimeOnToAM" enabled="true" width="886" height="56">
+					<Label text="上午时段" float="true" pos="54,0,0,0" enabled="true" width="84" height="56" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />	
+					<TileLayout name="FreeTimeOfMorningAppoint" float="true" pos="138,0,0,0" enabled="true" width="700" height="112" columns="5" itemsize="140,56">
+					
+				</TileLayout>
+				</HorizontalLayout>
+				<HorizontalLayout width="886" height="19" >
+					<Label float="true" pos="138,4,0,0" enabled="true" width="690" height="1" bkcolor="FFe3e4e8" />
+				</HorizontalLayout>
+				<HorizontalLayout name="LayOfAfternoonTileOnToAM" enabled="true" width="886" height="56">
+					<Label text="下午时段" float="true" pos="54,0,0,0" enabled="true" width="84" height="56" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />				
+					<TileLayout name="FreeTimeOfAfternoonAppoint" float="true" pos="138,0,0,0" enabled="true" width="700" height="112" columns="5" itemsize="140,56">
+					</TileLayout>
+				</HorizontalLayout>
+				<HorizontalLayout width="886" height="19" >
+					<Label float="true" pos="138,4,0,0" enabled="true" width="690" height="1" bkcolor="FFe3e4e8" />
+				</HorizontalLayout>
+				<HorizontalLayout name="LayOfnightTimeOnToAM" enabled="true" width="886" height="56">
+					<Label text="晚间时段" float="true" pos="54,0,0,0" enabled="true" width="84" height="56" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />				
+					<TileLayout name="FreeTimeOfNightAppoint" float="true" pos="138,0,0,0" enabled="true" width="700" height="112" columns="5" itemsize="140,56">
+					</TileLayout>
+				</HorizontalLayout>
+				
+				<HorizontalLayout enabled="true" width="886" height="45">
+					<Label text="患者信息" float="true" pos="22,16,0,0" enabled="true" width="200" height="16" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="5" />
+					<Label float="true" pos="14,16,0,0"  width="2" height="16" bkcolor="#ff00a0e9" />
+				</HorizontalLayout>
+				<HorizontalLayout width="886" height="1" >
+					<Label float="true" pos="22,0,0,0" enabled="true" width="842" height="1" bkcolor="FFe3e4e8" />
+				</HorizontalLayout>
+							
+				<HorizontalLayout enabled="true" width="886" height="65">
+					<Label text="患者姓名" float="true" pos="54,29,0,0" enabled="true" width="84" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Edit name="EditPatientNameOnToAM" textpadding="10,0,0,0" float="true" pos="138,29,0,0" font="1" textcolor="#FF313131" enabled="true" width="290" height="36" bkimage="Text/edit-appoint.png" />
+				</HorizontalLayout>
+				<HorizontalLayout enabled="true" width="886" height="28"/>
+				<HorizontalLayout enabled="true" width="886" height="42">
+				<HorizontalLayout float="true" pos="4,0,0,0" enabled="true" width="850" height="42" bkimage="bkimage/cont-tab-bg.png">
+					<Option name="OptionPatientConditionPage" bkcolor="#FFFFFFFF" text="主述" float="true" pos="50,6,0,0" enabled="true" width="80" height="36" textcolor="#ff313131" selected="true" font="4" align="center" />
+					<Option name="OptionPatientPicPage" bkcolor="#00000000" text="相关图像" float="true" pos="134,6,0,0" enabled="true" width="80" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="4" align="center" />					
+				</HorizontalLayout>
+				</HorizontalLayout>				
+				<VerticalLayout enabled="true" width="886" height="249" >
+					<TabLayout name="switchPatientInfoType">
+						<HorizontalLayout enabled="true" width="886" height="249">
+							<RichEdit name="EditPatientDescOnToAM" bordersize="1" float="true" pos="50,29,0,0" vscrollbar="true" enabled="true" width="755" height="166" bkcolor="#FFFFFFFF" bordercolor="#00D2D2D2" textpadding="10,3,10,3" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="1" />
+							<Label name="LabelPatientConditionHintOnToAM" text="主述不能超过1500字。" float="true" pos="50,204,0,0"  enabled="true" width="750" height="40" textcolor="#00eb6877" disabledtextcolor="#FFA7A6AA" font="10" />
+						</HorizontalLayout>
+						<HorizontalLayout enabled="true" width="886" height="249">
+							<Button name="ButtonUploadPatientPic1" bkcolor="FFD2D2D2"  float="true" pos="50,29,0,0" text="点击选择图片" textcolor="#FF004986" font="0" enabled="true" width="166" height="166" />
+							<Button name="ButtonUploadPatientPic2" bkcolor="FFD2D2D2" float="true" pos="240,29,0,0" text="点击选择图片" textcolor="#FF004986" font="0" enabled="true"  width="166" height="166" />
+							<Button name="ButtonUploadPatientPic3" bkcolor="FFD2D2D2" float="true" pos="430,29,0,0" text="点击选择图片" textcolor="#FF004986" font="0" enabled="true" width="166" height="166" />
+							<Label name="LabelPatientImgHintOnToAM" text="图像大小不能超过5M。图像较大时上传时间较长，请耐心等待，上传完毕后会自动跳转到预约列表页面。" float="true" pos="50,204,0,0" enabled="true" width="750" height="40" textcolor="#00eb6877" disabledtextcolor="#FFA7A6AA" font="10" />
+						</HorizontalLayout>
+					</TabLayout>
+				</VerticalLayout>
+			
+				<HorizontalLayout enabled="true" width="886" height="45">
+					<Label text="费用信息" float="true" pos="22,16,0,0" enabled="true" width="200" height="16" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="5" />
+					<Label float="true" pos="14,16,0,0"  width="2" height="16" bkcolor="#ff00a0e9" />
+				</HorizontalLayout>
+				
+				<VerticalLayout enabled="true" width="886" height="56" >
+				<HorizontalLayout float="true" pos="4,14,0,0" enabled="true" width="850" height="42" bkimage="bkimage/cont-tab-bg.png">
+					<Label text="付款方式：" float="true" pos="49,0,0,0" enabled="true" width="78" height="42" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Label text="线下支付" float="true" pos="127,0,0,0" enabled="true" width="100" height="42" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />		
+					<Label text="金额：" float="true" pos="698,0,0,0" enabled="true" width="60" height="42" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Label name="LabelCostMoneyOnToAM" text="" float="true" pos="744,0,0,0" align="center" enabled="true" width="50" height="42" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="6" />
+					<Label text="元" float="true" pos="814,0,0,0" enabled="true" width="30" height="42" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />						
+				</HorizontalLayout>
+				</VerticalLayout>
+			<VerticalLayout width="886" height="32">
+				<Label text="注意：后台确认预约成功后，该预约不可撤销！" float="true" pos="49,20,0,0" enabled="true" width="600" height="12" textcolor="#00eb6877" disabledtextcolor="#FFA7A6AA" font="10" />
+			</VerticalLayout>
+			<HorizontalLayout width="886" height="115">
+				<Button name="ButtonSubmitAppointment" float="true" pos="275,40,0,0" enabled="true" width="150" height="36" bkimage="Button/cont-btn-submit.png" />
+				<Button name="ButtonCancelSubmitAppoint" float="true" pos="455,40,0,0" width="150" height="36" bkimage="Button/cont-btn-cancel.png"  />
+			</HorizontalLayout>
+			</VerticalLayout>
+		</VerticalLayout>
+
+		<VerticalLayout name="container_appointmentdetail" visible="false"  enabled="true" width="894" height="718" bkimage="bkimage/cont-bg-2.png">
+			<HorizontalLayout enabled="true" width="894" height="68">
+				<Label float="true" pos="26,30,0,0" enabled="true" width="92" height="26" bkimage="Text/cont-title-YYXQ.png" />
+				<Button name="ButtonReturnToAppointmentListOnAMDetail"  float="true" pos="772,37,0,0" enabled="true" width="107" height="15" bkimage="Button/cont-btn-back-B.png" />
+			</HorizontalLayout>
+			<VerticalLayout enabled="true" float="true" pos="4,68,0,0" width="886" height="650" bkcolor="#FFFFFFFF" bordercolor="FFe3e4e8" bordersize="1" borderround="5,5"  vscrollbar="true">
+				<HorizontalLayout enabled="true" width="886" height="45">
+					<Label text="基本信息" float="true" pos="22,16,0,0" enabled="true" width="200" height="16" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="5" />
+					<Label float="true" pos="14,16,0,0"  width="2" height="16" bkcolor="#ff00a0e9" />
+				</HorizontalLayout>
+				<HorizontalLayout width="886" height="1" >
+					<Label float="true" pos="22,0,0,0" enabled="true" width="842" height="1" bkcolor="FFe3e4e8" />
+				</HorizontalLayout>
+				<HorizontalLayout enabled="true" width="886" height="65">
+					<Label text="预约专家" float="true" pos="54,29,0,0" enabled="true" width="84" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Label name="LabalExpertOnAMDetail" text=""  float="true" pos="148,29,0,0" enabled="true" width="290" height="36" textcolor="#FF313131" font="1"/>
+				</HorizontalLayout>
+				<HorizontalLayout enabled="true" width="700" height="50">
+					<Label text="会诊开始时间" float="true" pos="54,14,0,0" enabled="true" width="94" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Label name="LabalStartTimeOnAMDetail" text=""  float="true" pos="148,14,0,0" enabled="true" width="200" height="36" textcolor="#FF313131" font="1" />
+					<Label text="结束时间" float="true" pos="383,14,0,0" enabled="true" width="84" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Label name="LabalEndTimeOnAMDetail" text=""  float="true" pos="478,14,0,0" enabled="true" width="200" height="36" textcolor="#FF313131" font="1" />	
+				</HorizontalLayout>
+				<HorizontalLayout width="886" height="39" />
+				<HorizontalLayout width="886" height="1" >
+					<Label float="true" pos="22,0,0,0" enabled="true" width="842" height="1" bkcolor="FFe3e4e8" />
+				</HorizontalLayout>
+				<HorizontalLayout enabled="true" width="886" height="45">
+					<Label text="患者信息" float="true" pos="22,16,0,0" enabled="true" width="200" height="16" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="5" />
+					<Label float="true" pos="14,16,0,0"  width="2" height="16" bkcolor="#ff00a0e9" />
+				</HorizontalLayout>
+				<HorizontalLayout width="886" height="1" >
+					<Label float="true" pos="22,0,0,0" enabled="true" width="842" height="1" bkcolor="FFe3e4e8" />
+				</HorizontalLayout>
+
+				<HorizontalLayout enabled="true" width="886" height="65">
+					<Label text="患者姓名" float="true" pos="54,29,0,0" enabled="true" width="84" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Label name="LabalPatientOnAMDetail" float="true" pos="148,29,0,0" font="1" textcolor="#FF313131" enabled="true" width="290" height="36" />
+				</HorizontalLayout>
+				<HorizontalLayout enabled="true" width="886" height="28"/>
+				<HorizontalLayout enabled="true" width="886" height="42">
+					<HorizontalLayout float="true" pos="4,0,0,0" enabled="true" width="850" height="42" bkimage="bkimage/cont-tab-bg.png">
+						<Option name="OptionPatientConditionPageOnDetail" bkcolor="#FFFFFFFF" text="主述" float="true" pos="50,6,0,0" enabled="true" width="80" height="36" textcolor="#ff313131" selected="true" font="4" align="center" />
+						<Option name="OptionPatientPicPageOnDetail" bkcolor="#00000000" text="相关图像" float="true" pos="134,6,0,0" enabled="true" width="80" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="4" align="center" />
+					</HorizontalLayout>
+				</HorizontalLayout>				
+				<VerticalLayout enabled="true" width="886" height="249" >
+					<TabLayout name="switchPatientInfoTypeOnDetail">
+						<HorizontalLayout enabled="true" width="886" height="220">
+							<RichEdit name="LabalIllnessInfoOnAMDetail"  float="true" pos="50,29,0,0" vscrollbar="true" enabled="false" width="755" height="166" bkcolor="#FFFFFFFF"  textpadding="10,3,10,3" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="1" />
+						</HorizontalLayout>
+						<HorizontalLayout enabled="true" width="886" height="220">
+							<Button name="ButtonShowPatientPic1"  float="true" pos="50,29,0,0" enabled="true" width="166" height="166" />
+							<Button name="ButtonShowPatientPic2" float="true" pos="240,29,0,0" enabled="true"  width="166" height="166" />
+							<Button name="ButtonShowPatientPic3"  float="true" pos="430,29,0,0" enabled="true" width="166" height="166" />
+						</HorizontalLayout>
+					</TabLayout>
+				</VerticalLayout>	
+
+				<HorizontalLayout enabled="true" width="886" height="45">
+					<Label text="费用信息" float="true" pos="22,16,0,0" enabled="true" width="200" height="16" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="5" />
+					<Label float="true" pos="14,16,0,0"  width="2" height="16" bkcolor="#ff00a0e9" />
+				</HorizontalLayout>
+				
+				<VerticalLayout enabled="true" width="886" height="56" >
+					<HorizontalLayout float="true" pos="4,14,0,0" enabled="true" width="850" height="42" bkimage="bkimage/cont-tab-bg.png">
+						<Label text="付款方式：" float="true" pos="49,0,0,0" enabled="true" width="78" height="42" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+						<Label text="线下支付" float="true" pos="127,0,0,0" enabled="true" width="100" height="42" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />		
+						<Label text="金额：" float="true" pos="698,0,0,0" enabled="true" width="60" height="42" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+						<Label name="LabalCostFeeOnAMDetail" text="" float="true" pos="744,0,0,0" align="center" enabled="true" width="50" height="42" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="6" />
+						<Label text="元" float="true" pos="814,0,0,0" enabled="true" width="30" height="42" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />						
+					</HorizontalLayout>				
+				</VerticalLayout>	
+				<HorizontalLayout width="886" height="60"/>				
+			</VerticalLayout>
+		</VerticalLayout>
+
+		<VerticalLayout name="container_editappointment" visible="false" enabled="true" width="894" height="718" bkimage="bkimage/cont-bg-2.png">
+			<HorizontalLayout enabled="true" width="894" height="68">
+				<Label float="true" pos="26,30,0,0" enabled="true" width="92" height="26" bkimage="Text/cont-title-XGYY" />
+				<Button name="ButtonReturnToAppointListOnEditAM"  float="true" pos="772,37,0,0" enabled="true" width="107" height="15" bkimage="Button/cont-btn-back-B.png" />
+			</HorizontalLayout>
+			<VerticalLayout enabled="true" float="true" pos="4,68,0,0" width="886" height="650" bkcolor="#FFFFFFFF" bordercolor="FFe3e4e8" bordersize="1" borderround="5,5"  vscrollbar="true">
+				<HorizontalLayout enabled="true" width="886" height="45">
+					<Label text="基本信息" float="true" pos="22,16,0,0" enabled="true" width="200" height="16" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="5" />
+					<Label float="true" pos="14,16,0,0"  width="2" height="16" bkcolor="#ff00a0e9" />
+					<Button name="ButtonEditBasicInfoOnEditAM" text="修改基本信息" visible="true" float="true" pos="760,8,0,0"  enabled="true" width="90" height="30" textcolor="#FF26adf0" font="4" />
+					<Button name="ButtonReturnToBasicInfoOnEditAM" text="撤销修改" visible="false" float="true" pos="760,8,0,0"  enabled="true" width="90" height="30" textcolor="#FF26adf0" font="4" />
+				</HorizontalLayout>
+				<HorizontalLayout width="886" height="1" >
+					<Label float="true" pos="22,0,0,0" enabled="true" width="842" height="1" bkcolor="FFe3e4e8" />
+				</HorizontalLayout>	
+				
+				<VerticalLayout visible="true" name="container_showexpertinfooneditam"  enabled="true" width="886" height="116" >
+					<HorizontalLayout enabled="true" width="886" height="65">
+						<Label text="预约专家" float="true" pos="54,29,0,0" enabled="true" width="84" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+						<Label name="LabalExpertOnEditAM" text=""  float="true" pos="148,29,0,0" enabled="true" width="290" height="36" textcolor="#FF313131" font="1"/>
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="700" height="50">
+						<Label text="会诊开始时间" float="true" pos="54,14,0,0" enabled="true" width="94" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+						<Label name="LabalStartTimeOnEditAM" text=""  float="true" pos="148,14,0,0" enabled="true" width="200" height="36" textcolor="#FF313131" font="1" />
+						<Label text="结束时间" float="true" pos="383,14,0,0" enabled="true" width="84" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+						<Label name="LabalEndTimeOnEditAM" text=""  float="true" pos="478,14,0,0" enabled="true" width="200" height="36" textcolor="#FF313131" font="1" />	
+					</HorizontalLayout>
+					<HorizontalLayout width="886" height="39" />
+					<HorizontalLayout width="886" height="1" >
+						<Label float="true" pos="22,0,0,0" enabled="true" width="842" height="1" bkcolor="FFe3e4e8" />
+					</HorizontalLayout>
+					
+				</VerticalLayout>
+				
+				<VerticalLayout visible="false" name="container_editexpertinfooneditam" enabled="true" width="886" height="130" >
+					<HorizontalLayout enabled="true" width="886" height="65">
+						<Label text="请选择专家" float="true" pos="54,29,0,0" enabled="true" width="84" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+						<Combo name="ComboChooseExpertOnEditAppoint" itemfont="1" textpadding="10,0,0,0" float="true" pos="138,29,0,0" enabled="true" width="290" height="36" textcolor="#FF313131" bkimage="ComboBox/choose-expert.png" vscrollbar="true">
+						</Combo>
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="50">
+						<Label text="会诊时间" float="true" pos="54,14,0,0" enabled="true" width="84" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+						<DateTime name="DateChooseOnEditAppoint" float="true" textpadding="10,0,0,0" pos="138,14,0,0" enabled="true" font="1"  width="290" height="36" textcolor="#FF313131" bkimage="ComboBox/choose-data.png" />
+						<Button name="ButtonSearchFreeTimeOnEditAM" float="true" pos="448,14,0,0" bkimage="Button/check-appoint-time.png" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="26">
+						<Label text="注意：目前只接受7天内的预约，每次预约仅能选择一个时段。" float="true" pos="138,14,0,0" enabled="true" width="500" height="12" textcolor="#FFeb6877" disabledtextcolor="#FFA7A6AA" font="10" />
+					</HorizontalLayout>	
+				</VerticalLayout>
+
+				<HorizontalLayout enabled="true" width="886" height="17"/>
+				<HorizontalLayout name="LayOfMorningTimeOnEditAM" enabled="true" width="886" height="75">
+					<Label text="上午时段" float="true" pos="54,0,0,0" enabled="true" width="84" height="56" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />	
+					<TileLayout name="FreeTimeOfEditMorningAppoint" float="true" pos="138,0,0,0" enabled="true" width="700" height="112" columns="5" itemsize="140,56">
+					</TileLayout>
+					<HorizontalLayout width="886" height="19" >
+						<Label float="true" pos="138,60,0,0" enabled="true" width="690" height="1" bkcolor="FFe3e4e8" />
+					</HorizontalLayout>
+				</HorizontalLayout>
+				<HorizontalLayout name="LayOfAfternoonTileOnEditAM" enabled="true" width="886" height="75">
+					<Label text="下午时段" float="true" pos="54,0,0,0" enabled="true" width="84" height="56" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />				
+					<TileLayout name="FreeTimeOfEditAfternoonAppoint" float="true" pos="138,0,0,0" enabled="true" width="700" height="112" columns="5" itemsize="140,56">
+					</TileLayout>
+					<HorizontalLayout width="886" height="19" >
+					<Label float="true" pos="138,60,0,0" enabled="true" width="690" height="1" bkcolor="FFe3e4e8" />
+					</HorizontalLayout>
+				</HorizontalLayout>				
+				<HorizontalLayout name="LayOfnightTimeOnEditAM" enabled="true" width="886" height="56">
+					<Label text="晚间时段" float="true" pos="54,0,0,0" enabled="true" width="84" height="56" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />				
+					<TileLayout name="FreeTimeOfEditNightAppoint" float="true" pos="138,0,0,0" enabled="true" width="700" height="112" columns="5" itemsize="140,56">
+					</TileLayout>
+				</HorizontalLayout>
+				
+				<HorizontalLayout enabled="true" width="886" height="45">
+					<Label text="患者信息" float="true" pos="22,16,0,0" enabled="true" width="200" height="16" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="5" />
+					<Label float="true" pos="14,16,0,0"  width="2" height="16" bkcolor="#ff00a0e9" />
+				</HorizontalLayout>
+				<HorizontalLayout width="886" height="1" >
+					<Label float="true" pos="22,0,0,0" enabled="true" width="842" height="1" bkcolor="FFe3e4e8" />
+				</HorizontalLayout>
+							
+				<HorizontalLayout enabled="true" width="886" height="65">
+					<Label text="患者姓名" float="true" pos="54,29,0,0" enabled="true" width="84" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Edit name="EditPatientNameOnEditAM" textpadding="10,0,0,0" float="true" pos="138,29,0,0" font="1" textcolor="#FF313131" enabled="true" width="290" height="36" bkimage="Text/edit-appoint.png" />
+				</HorizontalLayout>
+				<HorizontalLayout enabled="true" width="886" height="28"/>
+				<HorizontalLayout enabled="true" width="886" height="42">
+				<HorizontalLayout float="true" pos="4,0,0,0" enabled="true" width="850" height="42" bkimage="bkimage/cont-tab-bg.png">
+					<Option name="OptionPatientConditionPageOnEdit" bkcolor="#FFFFFFFF" text="主述" float="true" pos="50,6,0,0" enabled="true" width="80" height="36" textcolor="#ff313131" selected="true" font="4" align="center" />
+					<Option name="OptionPatientPicPageOnEdit" bkcolor="#00000000"  text="相关图像" float="true" pos="134,6,0,0" enabled="true" width="80" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="4" align="center" />					
+				</HorizontalLayout>
+				</HorizontalLayout>				
+				<VerticalLayout enabled="true" width="886" height="249" >
+					<TabLayout name="switchPatientInfoTypeOnEdit">
+						<HorizontalLayout enabled="true" width="886" height="249">
+							<RichEdit name="EditPatientDescOnEditAM" bordersize="1" float="true" pos="50,29,0,0" vscrollbar="true" enabled="true" width="755" height="166" bkcolor="#FFFFFFFF" bordercolor="#00D2D2D2" textpadding="10,3,10,3" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="1" />
+							<Label name="LabelPatientConditionHintOnEditAM" text="主述不能超过1500字。" float="true" pos="50,204,0,0"  enabled="true" width="750" height="40" textcolor="#00eb6877" disabledtextcolor="#FFA7A6AA" font="10" />
+						</HorizontalLayout>
+						<HorizontalLayout enabled="true" width="886" height="249">
+							<Button name="ButtonUploadNewPatientPic1" bkcolor="FFD2D2D2"  float="true" pos="50,29,0,0" text="点击选择图片" textcolor="#FF004986" font="0" enabled="true" width="166" height="166" />
+							<Button name="ButtonUploadNewPatientPic2" bkcolor="FFD2D2D2" float="true" pos="240,29,0,0" text="点击选择图片" textcolor="#FF004986" font="0" enabled="true"  width="166" height="166" />
+							<Button name="ButtonUploadNewPatientPic3" bkcolor="FFD2D2D2" float="true" pos="430,29,0,0" text="点击选择图片" textcolor="#FF004986" font="0" enabled="true" width="166" height="166" />
+							<Label name="LabelPatientImgHintOnEditAM" text="图像大小不能超过5M。图像较大时上传时间较长，请耐心等待，上传完毕后会自动跳转到预约列表页面。" float="true" pos="50,204,0,0" enabled="true" width="750" height="40" textcolor="#00eb6877" disabledtextcolor="#FFA7A6AA" font="10" />
+						</HorizontalLayout>
+					</TabLayout>
+				</VerticalLayout>
+			
+				<HorizontalLayout enabled="true" width="886" height="45">
+					<Label text="费用信息" float="true" pos="22,16,0,0" enabled="true" width="200" height="16" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="5" />
+					<Label float="true" pos="14,16,0,0"  width="2" height="16" bkcolor="#ff00a0e9" />
+				</HorizontalLayout>
+				
+				<VerticalLayout enabled="true" width="886" height="56" >
+				<HorizontalLayout float="true" pos="4,14,0,0" enabled="true" width="850" height="42" bkimage="bkimage/cont-tab-bg.png">
+					<Label text="付款方式：" float="true" pos="49,0,0,0" enabled="true" width="78" height="42" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Label text="线下支付" float="true" pos="127,0,0,0" enabled="true" width="100" height="42" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />		
+					<Label text="金额：" float="true" pos="698,0,0,0" enabled="true" width="60" height="42" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Label name="LabelCostMoneyOnEditAM" text="" float="true" pos="744,0,0,0" align="center" enabled="true" width="50" height="42" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="6" />
+					<Label text="元" float="true" pos="814,0,0,0" enabled="true" width="30" height="42" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />						
+				</HorizontalLayout>
+				</VerticalLayout>
+				<HorizontalLayout width="886" height="115">
+					<Button name="ButtonSubmitEditAppointment" float="true" pos="275,40,0,0" enabled="true" width="150" height="36" bkimage="Button/cont-btn-submit.png" />
+					<Button name="ButtonCancelSubmitEditAppoint" float="true" pos="455,40,0,0" width="150" height="36" bkimage="Button/cont-btn-cancel.png"  />
+				</HorizontalLayout>
+			</VerticalLayout>			
+		</VerticalLayout>		
+	</VerticalLayout>
+</Window>

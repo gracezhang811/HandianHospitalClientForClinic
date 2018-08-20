@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Window size="894,718">
+	<VerticalLayout width="894" height="718" bkimage="bkimage/cont-bg-2.png">
+		<HorizontalLayout enabled="true" width="894" height="68">
+			<Label float="true" pos="26,30,0,0" enabled="true" width="91" height="26" bkimage="Text/cont-title-ZJJS.png" />
+		</HorizontalLayout>
+		<VerticalLayout enabled="true" float="true" pos="4,68,0,0" width="886" height="650" bkcolor="#FFFFFFFF" bordercolor="FFe3e4e8" bordersize="1" borderround="5,5" >
+			<HorizontalLayout enabled="true" width="700" height="47">
+				<Option name="OptionDoctorInfo" text="专家信息" float="true" pos="20,7,0,0" enabled="true" width="80" height="40" textcolor="#FF313131" selected="true" bkimage="bkimage/option_bk1.png" font="1" align="center" />
+				<Option name="OptionDoctorWorkTime" text="出诊时间" float="true" pos="110,7,0,0" enabled="true" width="80" height="40" textcolor="#FF313131" font="1" align="center" bkimage="bkimage/option_bk2.png" />
+			</HorizontalLayout>
+			<HorizontalLayout width="886" height="3" >
+				<Label float="true" pos="3,0,0,0" enabled="true" width="880" height="1" bkcolor="FFe3e4e8" />
+			</HorizontalLayout>	
+			<VerticalLayout enabled="true" width="886" height="600">
+			<TabLayout name="switchDoctorInfoType">
+				<VerticalLayout width="886" height="600" >
+					<VerticalLayout enabled="true" width="880" height="48"/>
+					<TileLayout name="TileExpertInfo" float="true" pos="54,15,0,0" enabled="true" width="830" height="552" vscrollbar="true" columns="2" itemsize="410,260" childpadding="10">
+					</TileLayout>	
+				</VerticalLayout>			
+				<VerticalLayout enabled="true" width="886" height="600" >
+					<VerticalLayout enabled="true" width="886" height="13"/>
+					<List name="ListDoctorWorkTime" header="true" itemfont="1" itemalign="center" itemhlinesize="1" itemhlinecolor="#FFe3e4e8" itemvlinesize="1" itemvlinecolor="#FFFFFFFF" bkcolor="#FFFFFFFF" enabled="true" width="936" height="587" vscrollbar="true" hscrollbar="true" itemtextcolor="#FF313131" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itembkcolor="#FFf6f8fb" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" itemaltbk="true">
+						<ListHeader name="domain" width="936" height="31" bkcolor="#FFFFFFFF">
+							<ListHeaderItem text="专家" font="0" bordersize="1,0,0,1" bordercolor="#FFFFFFFF" align="center" width="103" height="31" sepwidth="1" align="center" bkcolor="#fff0f0f0"  />
+							<ListHeaderItem text="星期一" font="0" bordersize="1,0,0,1" bordercolor="#FFFFFFFF" align="center" width="119" height="31" sepwidth="1" align="center" bkcolor="#fff0f0f0" />
+							<ListHeaderItem text="星期二" font="0" bordersize="1,0,0,1" bordercolor="#FFFFFFFF" align="center" width="119" height="31" sepwidth="1" align="center" bkcolor="#fff0f0f0"  />
+							<ListHeaderItem text="星期三" font="0" bordersize="1,0,0,1" bordercolor="#FFFFFFFF" align="center" width="119" height="31" sepwidth="1" align="center" bkcolor="#fff0f0f0"  />
+							<ListHeaderItem text="星期四" font="0" bordersize="1,0,0,1" bordercolor="#FFFFFFFF" align="center" width="119" height="31" sepwidth="1" align="center" bkcolor="#fff0f0f0"  />
+							<ListHeaderItem text="星期五" font="0" bordersize="1,0,0,1" bordercolor="#FFFFFFFF" align="center" width="119" height="31" sepwidth="1" align="center" bkcolor="#fff0f0f0"  />
+							<ListHeaderItem text="星期六" font="0" bordersize="1,0,0,1" bordercolor="#FFFFFFFF" align="center" width="119" height="31" sepwidth="1" align="center" bkcolor="#fff0f0f0"  />
+							<ListHeaderItem text="星期日" font="0" bordersize="1,0,0,1" bordercolor="#FFFFFFFF" align="center" width="119" height="31" sepwidth="1" align="center" bkcolor="#fff0f0f0"  />
+						</ListHeader>	
+					</List>			
+				</VerticalLayout>
+			</TabLayout>
+		</VerticalLayout>
+		</VerticalLayout>
+	</VerticalLayout>
+</Window>

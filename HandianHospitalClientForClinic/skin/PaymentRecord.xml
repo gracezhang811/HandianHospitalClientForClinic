@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="894,718">
+	<VerticalLayout width="894" height="718" bkimage="bkimage/cont-bg-2.png">
+		<HorizontalLayout enabled="true" width="894" height="68">
+			<Label float="true" pos="26,30,0,0" enabled="true" width="91" height="26" bkimage="Text/cont-title-DRZL.png" />
+		</HorizontalLayout>
+		<VerticalLayout enabled="true" float="true" pos="4,68,0,0" width="886" height="650" bkcolor="#FFFFFFFF" bordercolor="FFe3e4e8" bordersize="1" borderround="5,5" >
+			<HorizontalLayout enabled="true" width="886" height="47">
+				<Option name="OptionUnPay" text="待支付" float="true" pos="20,7,0,0" enabled="true" width="80" height="40" textcolor="#FF313131" selected="true" bkimage="bkimage/option_bk1.png" font="1" align="center" />
+				<Option name="OptionAllPay" text="全部"  float="true" pos="110,7,0,0" enabled="true" width="80" height="40" textcolor="#FF313131" font="1" align="center" bkimage="bkimage/option_bk2.png" />
+				<Option name="OptionBill" text="总账" float="true" pos="200,7,0,0" enabled="true" width="80" height="40" textcolor="#FF313131" font="1" align="center" bkimage="bkimage/option_bk2.png" />
+				<Option name="OptionWeixinCode" text="微信付款码" float="true" pos="290,7,0,0" enabled="true" width="100" height="40" textcolor="#FF313131" font="1" align="center" bkimage="bkimage/option_bk2.png" />
+			</HorizontalLayout>
+			<HorizontalLayout width="886" height="3" >
+				<Label float="true" pos="3,0,0,0" enabled="true" width="880" height="1" bkcolor="FFe3e4e8" />
+			</HorizontalLayout>
+			<VerticalLayout enabled="true" width="886" height="600">
+			<TabLayout name="switchPayInfoType">
+				<VerticalLayout enabled="true" width="886" height="600" >
+					<List name="ListUnpay" float="true" pos="0,0,0,0" header="true" itemfont="1" itemalign="center" vscrollbar="true" itemhlinesize="1" bkcolor="#FFFFFFFF" itembkcolor="#FFf6f8fb" itemhlinecolor="#FFe3e4e8" enabled="true" width="886" height="540" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" itemaltbk="true">
+						<ListHeader name="domain" bkimage="bkimage/table-head-bg.png" >
+							<ListHeaderItem text="诊疗开始时间" font="0" endellipsis="true" textcolor="#ffffffff" align="center" width="180" height="40" minwidth="16"  sepwidth="1" align="center"  />
+							<ListHeaderItem text="结束时间" font="0" endellipsis="true" textcolor="#ffffffff" align="center" width="180" height="40" minwidth="16"  sepwidth="1" align="center"   />
+							<ListHeaderItem text="专家" font="0" endellipsis="true" textcolor="#ffffffff" align="center" width="110" height="40" minwidth="16"  sepwidth="1" align="center"   />								
+							<ListHeaderItem text="患者" font="0" endellipsis="true" textcolor="#ffffffff" align="center" width="110" height="40" minwidth="16"  sepwidth="1" align="center"  />           
+							<ListHeaderItem text="状态" font="0" endellipsis="true" textcolor="#ffffffff" align="center" width="132" height="40" minwidth="16"  sepwidth="1" align="center" />	
+							<ListHeaderItem text="费用" font="0" endellipsis="true" textcolor="#ffffffff" align="center" width="174" height="40" minwidth="16"  sepwidth="1" align="center"  />
+						</ListHeader>	
+					</List>
+					<HorizontalLayout enabled="true" float="true" pos="0,540,0,0" width="894" height="60">
+						<Button name="ButtonFirstPageOfUnPay"  float="true" pos="337,20,0,0" enabled="true" width="48" height="24" bkimage="Button/cont-btn-list-a.png" />
+						<Button name="ButtonPreviousPageOfUnPay"  float="true" pos="388,20,0,0" enabled="true" width="58" height="24" bkimage="Button/cont-btn-list-b.png" />
+						<Button name="ButtonNextPageOfUnPay"  float="true" pos="449,20,0,0" enabled="true" width="58" height="24" bkimage="Button/cont-btn-list-c.png" />
+						<Button name="ButtonEndPageOfUnPay"  float="true" pos="510,20,0,0" enabled="true" width="48" height="24" bkimage="Button/cont-btn-list-d.png" />
+						<Label text="共" float="true" pos="725,25,0,0" enabled="true" width="16" height="14" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="right" />
+						<Label name="LabelPageNumOnUnPay" text="" float="true" pos="741,25,0,0" enabled="true" width="25" height="14" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="center" />
+						<Label text="页 当前第" float="true" pos="766,25,0,0" enabled="true" width="70" height="14" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="center" />
+						<Label name="LabelCurrentPageNumOnUnPay" text="" float="true" pos="836,25,0,0" enabled="true" width="25" height="14" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="center" />
+						<Label text="页" float="true" pos="861,25,0,0" enabled="true" width="16" height="14" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="right" />
+					</HorizontalLayout>
+				</VerticalLayout>
+				<VerticalLayout enabled="true" width="886" height="600" >
+					<List name="ListAllpay" float="true" pos="0,0,0,0" header="true" itemfont="1" itemalign="center" vscrollbar="true" itemhlinesize="1" bkcolor="#FFFFFFFF" itembkcolor="#FFf6f8fb" itemhlinecolor="#FFe3e4e8" enabled="true" width="886" height="540" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" itemaltbk="true">
+						<ListHeader name="domain" bkimage="bkimage/table-head-bg.png" >
+							<ListHeaderItem text="诊疗开始时间" font="0" endellipsis="true" textcolor="#ffffffff" align="center" width="180" height="40" minwidth="16"  sepwidth="1" align="center"  />
+							<ListHeaderItem text="结束时间" font="0" endellipsis="true" textcolor="#ffffffff" align="center" width="180" height="40" minwidth="16"  sepwidth="1" align="center"   />
+							<ListHeaderItem text="专家" font="0" endellipsis="true" textcolor="#ffffffff" align="center" width="110" height="40" minwidth="16"  sepwidth="1" align="center"   />								
+							<ListHeaderItem text="患者" font="0" endellipsis="true" textcolor="#ffffffff" align="center" width="110" height="40" minwidth="16"  sepwidth="1" align="center"  />           
+							<ListHeaderItem text="状态" font="0" endellipsis="true" textcolor="#ffffffff" align="center" width="132" height="40" minwidth="16"  sepwidth="1" align="center" />	
+							<ListHeaderItem text="费用" font="0" endellipsis="true" textcolor="#ffffffff" align="center" width="174" height="40" minwidth="16"  sepwidth="1" align="center"  />
+						</ListHeader>
+					</List>		
+					<HorizontalLayout enabled="true" float="true" pos="0,538,0,0" width="894" height="60">
+						<Button name="ButtonFirstPageOfAllPay"  float="true" pos="337,20,0,0" enabled="true" width="48" height="24" bkimage="Button/cont-btn-list-a.png" />
+						<Button name="ButtonPreviousPageOfAllPay"  float="true" pos="388,20,0,0" enabled="true" width="58" height="24" bkimage="Button/cont-btn-list-b.png" />
+						<Button name="ButtonNextPageOfAllPay"  float="true" pos="449,20,0,0" enabled="true" width="58" height="24" bkimage="Button/cont-btn-list-c.png" />
+						<Button name="ButtonEndPageOfAllPay"  float="true" pos="510,20,0,0" enabled="true" width="48" height="24" bkimage="Button/cont-btn-list-d.png" />
+						<Label text="共" float="true" pos="725,25,0,0" enabled="true" width="16" height="14" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="right" />
+						<Label name="LabelPageNumOnAllPay" text="" float="true" pos="741,25,0,0" enabled="true" width="25" height="14" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="center" />
+						<Label text="页 当前第" float="true" pos="766,25,0,0" enabled="true" width="70" height="14" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="center" />
+						<Label name="LabelCurrentPageNumOnAllPay" text="" float="true" pos="836,25,0,0" enabled="true" width="25" height="14" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="center" />
+						<Label text="页" float="true" pos="861,25,0,0" enabled="true" width="16" height="14" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="right" />
+					</HorizontalLayout>	
+				</VerticalLayout>
+				<VerticalLayout enabled="true" width="886" height="600" >	
+					<HorizontalLayout enabled="true" width="886" height="63"/>
+					<HorizontalLayout enabled="true" width="886" height="60">
+						<Label text="开始日期：" float="true" pos="254,20,0,0" enabled="true" width="150" height="40" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="2" />
+						<Label name="LabelBillStartTime" float="true" pos="404,20,0,0" enabled="true" width="200" height="40" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="2" />
+					</HorizontalLayout>
+					<HorizontalLayout width="886" height="1" >
+						<Label float="true" pos="235,0,0,0" enabled="true" width="375" height="1" bkcolor="FFe3e4e8" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="60">
+						<Label text="截止日期：" float="true" pos="254,20,0,0" enabled="true" width="150" height="40" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="2" />
+						<Label name="LabelBillEndTime" float="true" pos="404,20,0,0" enabled="true" width="200" height="40" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="2" />
+					</HorizontalLayout>
+					<HorizontalLayout width="886" height="1" >
+						<Label float="true" pos="235,0,0,0" enabled="true" width="375" height="1" bkcolor="FFe3e4e8" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="60">
+						<Label text="已支付费用：" float="true" pos="254,20,0,0" enabled="true" width="150" height="40" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="2" />
+						<Label name="LabelBillPaid" float="true" pos="404,20,0,0" enabled="true" width="200" height="40" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="2" />
+					</HorizontalLayout>
+					<HorizontalLayout width="886" height="1" >
+						<Label float="true" pos="235,0,0,0" enabled="true" width="375" height="1" bkcolor="FFe3e4e8" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="60">
+						<Label text="待支付费用：" float="true" pos="254,20,0,0" enabled="true" width="150" height="40" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="2" />
+						<Label name="LabelBillToPay" float="true" pos="404,20,0,0" enabled="true" width="200" height="40" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="2" />
+					</HorizontalLayout>
+					<HorizontalLayout width="886" height="1" >
+						<Label float="true" pos="235,0,0,0" enabled="true" width="375" height="1" bkcolor="FFe3e4e8" />
+					</HorizontalLayout>
+				</VerticalLayout>
+				<VerticalLayout enabled="true" width="886" height="600" >	
+					<ActiveX name="CodeImage" float="true" pos="223,80,0,0" width="450" height="450"  />
+					<Label text="付款时请注明用户名信息。" float="true" pos="0,33,0,0" enabled="true" width="886" height="16" textcolor="#FFeb6877" disabledtextcolor="#FFA7A6AA" font="5" align="center"/>
+				</VerticalLayout>	
+				</TabLayout>
+			</VerticalLayout>
+		</VerticalLayout>
+    </VerticalLayout>
+</Window>

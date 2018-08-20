@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="1024,768" mininfo="1024,768" maxinfo="1024,768" caption="0,0,0,50">
+    <Font name="微软雅黑" id="0" size="14" bold="false" italic="false" />
+    <Font name="微软雅黑" id="1" size="16" bold="false" italic="false" />
+    <Font name="微软雅黑" id="2" size="18" bold="false" italic="false" />
+	<Font name="微软雅黑" id="3" size="19" bold="false" italic="false" />
+	<Font name="微软雅黑" id="4" size="14" bold="true" italic="false" />
+    <Font name="微软雅黑" id="5" size="16" bold="true" italic="false" />
+	<Font name="微软雅黑" id="6" size="18" bold="true" italic="false" />
+	<Font name="微软雅黑" id="7" size="19" bold="true" italic="false" />
+	<Font name="微软雅黑" id="9" size="30" bold="true" italic="false" />
+	<Font name="微软雅黑" id="10" size="12" bold="false" italic="false" />
+	<Default name="VScrollBar" value="button1normalimage=&quot;file=&apos;ScrollBar/scroll.png&apos; source=&apos;0,0,16,16&apos;&quot; button1hotimage=&quot;file=&apos;ScrollBar/scroll.png&apos; source=&apos;0,0,16,16&apos; mask=&apos;#FFFF00FF&apos;&quot; button1pushedimage=&quot;file=&apos;ScrollBar/scroll.png&apos; source=&apos;0,16,16,32&apos; mask=&apos;#FFFF00FF&apos;&quot; button1disabledimage=&quot;file=&apos;ScrollBar/scroll.png&apos; source=&apos;0,0,16,16&apos; mask=&apos;#FFFF00FF&apos;&quot; button2normalimage=&quot;file=&apos;ScrollBar/scroll.png&apos; source=&apos;0,32,16,48&apos; mask=&apos;#FFFF00FF&apos;&quot; button2hotimage=&quot;file=&apos;ScrollBar/scroll.png&apos; source=&apos;0,32,16,48&apos; mask=&apos;#FFFF00FF&apos;&quot; button2pushedimage=&quot;file=&apos;ScrollBar/scroll.png&apos; source=&apos;0,48,16,64&apos; mask=&apos;#FFFF00FF&apos;&quot; button2disabledimage=&quot;file=&apos;ScrollBar/scroll.png&apos; source=&apos;0,32,16,48&apos; mask=&apos;#FFFF00FF&apos;&quot; thumbnormalimage=&quot;file=&apos;ScrollBar/scroll.png&apos; source=&apos;0,64,16,80&apos; corner=&apos;2,2,2,2&apos; mask=&apos;#FFFF00FF&apos;&quot; thumbhotimage=&quot;file=&apos;ScrollBar/scroll.png&apos; source=&apos;0,64,16,80&apos; corner=&apos;2,2,2,2&apos; mask=&apos;#FFFF00FF&apos;&quot; thumbpushedimage=&quot;ffile=&apos;ScrollBar/scroll.png&apos; source=&apos;0,64,16,80&apos; corner=&apos;2,2,2,2&apos; mask=&apos;#FFFF00FF&apos;&quot; thumbdisabledimage=&quot;file=&apos;ScrollBar/scroll.png&apos; source=&apos;0,64,16,80&apos; corner=&apos;2,2,2,2&apos; mask=&apos;#FFFF00FF&apos;&quot; railnormalimage=&quot;file=&apos;ScrollBar/scroll.png&apos; source=&apos;0,80,16,96&apos; corner=&apos;2,2,2,2&apos; mask=&apos;#FFFF00FF&apos;&quot; railhotimage=&quot;file=&apos;ScrollBar/scroll.png&apos; source=&apos;0,80,16,96&apos; corner=&apos;2,2,2,2&apos; mask=&apos;#FFFF00FF&apos;&quot; railpushedimage=&quot;file=&apos;ScrollBar/scroll.png&apos; source=&apos;0,96,16,112&apos; corner=&apos;2,2,2,2&apos; mask=&apos;#FFFF00FF&apos;&quot; raildisabledimage=&quot;file=&apos;ScrollBar/scroll.png&apos; source=&apos;0,80,16,96&apos; corner=&apos;2,2,2,2&apos; mask=&apos;#FFFF00FF&apos;&quot; bknormalimage=&quot;file=&apos;ScrollBar/scroll.png&apos; source=&apos;0,128,16,146&apos; corner=&apos;2,2,2,2&apos; mask=&apos;#FFFF00FF&apos;&quot; bkhotimage=&quot;file=&apos;ScrollBar/scroll.png&apos; source=&apos;0,128,16,146&apos; corner=&apos;2,2,2,2&apos; mask=&apos;#FFFF00FF&apos;&quot; bkpushedimage=&quot;file=&apos;ScrollBar/scroll.png&apos; source=&apos;0,128,16,146&apos; corner=&apos;2,2,2,2&apos; mask=&apos;#FFFF00FF&apos;&quot; bkdisabledimage=&quot;file=&apos;ScrollBar/scroll.png&apos; source=&apos;0,128,16,146&apos; corner=&apos;2,2,2,2&apos; mask=&apos;#FFFF00FF&apos;&quot; " />
+ 
+	<VerticalLayout enabled="true" width="1024" height="768" >
+		<HorizontalLayout enabled="true" width="1024" height="50" bkimage="bkimage/top-bg.png">            
+			<Button name="ButtonCloseRecordDiag" float="true" pos="1000,2,0,0" height="14" width="18" enable="true" bkimage="file='Button/close.png'" />
+		</HorizontalLayout> 
+		<VerticalLayout enabled="true" width="1024" height="718" bkimage="bkimage/cont-bg-2.png">
+			<HorizontalLayout enabled="true" width="1024" height="68">
+				<Label float="true" pos="26,30,0,0" enabled="true" width="136" height="26" bkimage="Text/cont-title-ZDJLXG.png" />
+			</HorizontalLayout>
+			<VerticalLayout enabled="true" float="true" pos="4,68,0,0" width="1016" height="650" bkcolor="#FFFFFFFF" bordercolor="FFe3e4e8" bordersize="1" borderround="5,5"  vscrollbar="true">
+				<HorizontalLayout enabled="true" width="1016" height="45">
+					<Label text="基本信息" float="true" pos="22,16,0,0" enabled="true" width="200" height="16" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="5" />
+					<Label float="true" pos="14,16,0,0"  width="2" height="16" bkcolor="#ff00a0e9" />
+				</HorizontalLayout>
+				<HorizontalLayout width="1016" height="1" >
+					<Label float="true" pos="22,0,0,0" enabled="true" width="972" height="1" bkcolor="FFe3e4e8" />
+				</HorizontalLayout>
+				<HorizontalLayout enabled="true" width="1016" height="65">
+					<Label text="会诊专家" float="true" pos="192,29,0,0" enabled="true" width="84" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Label name="LabelExpertNameOnToRecord" text=""  float="true" pos="298,29,0,0" enabled="true" width="290" height="36" textcolor="#FF313131" font="2"/>
+				</HorizontalLayout>
+				<HorizontalLayout enabled="true" width="1016" height="50">
+					<Label text="会诊开始时间" float="true" pos="192,14,0,0" enabled="true" width="94" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Label name="LabelStartTimeOnToRecord" text=""  float="true" pos="298,14,0,0" enabled="true" width="200" height="36" textcolor="#FF313131" font="2" />
+					<Label text="结束时间" float="true" pos="542,14,0,0" enabled="true" width="84" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Label name="LabelEndTimeOnToRecord" text=""  float="true" pos="618,14,0,0" enabled="true" width="200" height="36" textcolor="#FF313131" font="2" />	
+				</HorizontalLayout>
+				<HorizontalLayout enabled="true" width="1016" height="28"/>
+				<HorizontalLayout enabled="true" width="1016" height="42">
+					<HorizontalLayout float="true" pos="5,0,0,0" enabled="true" width="980" height="42" bkimage="bkimage/cont-tab-bg.png">
+						<Option name="OptionPatientConditionPageOnToRecord" bkcolor="#FFFFFFFF" text="主述" float="true" pos="131,6,0,0" enabled="true" width="80" height="36" textcolor="#ff313131" selected="true" font="4" align="center" />
+						<Option name="OptionPatientPicPageOnToRecord" text="相关图像" bkcolor="#00000000" float="true" pos="211,6,0,0" enabled="true" width="80" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="4" align="center" />
+					</HorizontalLayout>
+				</HorizontalLayout>				
+				<VerticalLayout enabled="true" width="1016" height="249" >
+					<TabLayout name="switchPatientInfoTypeOnToRecord">
+						<HorizontalLayout enabled="true" width="1016" height="220">
+							<RichEdit name="LabelPatientDescOnToRecord"  float="true" pos="131,29,0,0" vscrollbar="true" enabled="false" width="755" height="166" bkcolor="#FFFFFFFF"  textpadding="4,3,4,3" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="1" />
+						</HorizontalLayout>
+						<HorizontalLayout enabled="true" width="1016" height="220">
+							<Control name="ConteolShowPatientPic1OnToRecord"  float="true" pos="131,29,0,0" enabled="true" width="166" height="166" />
+							<Control name="ConteolShowPatientPic2OnToRecord"  float="true" pos="426,29,0,0" enabled="true"  width="166" height="166" />
+							<Control name="ConteolShowPatientPic3OnToRecord"  float="true" pos="716,29,0,0" enabled="true" width="166" height="166" />
+						</HorizontalLayout>
+					</TabLayout>
+				</VerticalLayout>	
+				
+				<HorizontalLayout enabled="true" width="1016" height="45">
+					<Label text="患者信息" float="true" pos="22,16,0,0" enabled="true" width="200" height="16" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="5" />
+					<Label float="true" pos="14,16,0,0"  width="2" height="16" bkcolor="#ff00a0e9" />
+				</HorizontalLayout>
+				<HorizontalLayout width="1016" height="1" >
+					<Label float="true" pos="22,0,0,0" enabled="true" width="972" height="1" bkcolor="FFe3e4e8" />
+				</HorizontalLayout>
+
+				<HorizontalLayout enabled="true" width="1016" height="65">
+					<Label text="患者姓名" float="true" pos="131,29,0,0" enabled="true" width="84" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Label name="LabelPatientNameOnToRecord" text="" float="true" pos="236,29,0,0" font="2" textcolor="#FF313131" enabled="true" width="290" height="36" />
+					<Label text="性别" float="true" pos="473,29,0,0" enabled="true" width="65" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Option name="CheckPatientmaleOnToRecord" text="男" selected="true" float="true" pos="544,29,0,0" textpadding="18,0,0,0" font="2" width="50" height="36" group="Radio" align="left"  selectedimage="file='Radio/RadioBtnSel.png' source='0,0,14,14' dest='0,11,14,25'" normalimage="file='Radio/RadioBtnNon.png' source='0,0,14,14' dest='0,11,14,25'" />
+					<Option name="CheckPatientFemaleOnToRecord" text="女" float="true" pos="604,29,0,0" textpadding="18,0,0,0" font="2" width="50" height="36" group="Radio" align="left"  selectedimage="file='Radio/RadioBtnSel.png' source='0,0,14,14' dest='0,11,14,25'" normalimage="file='Radio/RadioBtnNon.png' source='0,0,14,14' dest='0,11,14,25'" />			
+					<Label text="年龄" float="true" pos="753,29,0,0" enabled="true" width="40" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Edit name="EditPatientAgeOnToRecord" float="true" textpadding="10,0,0,0" textcolor="#FF313131" pos="795,29,0,0" font="2" width="110" height="36" bkcolor="#00000000" bordercolor="#ffb9c1c4" bordersize="1" />	
+				</HorizontalLayout>
+				<HorizontalLayout enabled="true" width="1016" height="40">
+					<Label text="手机号" float="true" pos="131,4,0,0" enabled="true" width="120" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Edit name="EditPatientPhoneOnToRecord" float="true" textpadding="10,0,0,0" textcolor="#FF313131" pos="232,4,0,0" font="2" width="170" height="36" bkcolor="#00000000" bordercolor="#ffb9c1c4" bordersize="1" />			
+					<Label text="身份证号" float="true" pos="473,4,0,0" enabled="true" width="65" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Edit name="EditPatientIDOnToRecord" float="true" textpadding="10,0,0,0" textcolor="#FF313131" pos="544,4,0,0" font="2" width="360" height="36" bkcolor="#00000000" bordercolor="#ffb9c1c4" bordersize="1" />			
+				</HorizontalLayout>
+				<HorizontalLayout width="1016" height="34"/>	
+				
+				<HorizontalLayout enabled="true" width="1016" height="45">
+					<Label text="专家意见" float="true" pos="22,16,0,0" enabled="true" width="200" height="16" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="5" />
+					<Label float="true" pos="14,16,0,0"  width="2" height="16" bkcolor="#ff00a0e9" />
+				</HorizontalLayout>
+				<HorizontalLayout width="1016" height="1" >
+					<Label float="true" pos="22,0,0,0" enabled="true" width="972" height="1" bkcolor="FFe3e4e8" />
+				</HorizontalLayout>
+				<HorizontalLayout enabled="true" width="1016" height="220" >
+					<RichEdit name="LabelExpertAdviseOnToRecord" float="true" pos="131,29,0,0" vscrollbar="true" enabled="false" width="755" height="166"  textpadding="10,3,10,3" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="1" />
+				</HorizontalLayout >	
+
+				<HorizontalLayout enabled="true" width="1016" height="45">
+					<Label text="诊断信息" float="true" pos="22,16,0,0" enabled="true" width="200" height="16" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="5" />
+					<Label float="true" pos="14,16,0,0"  width="2" height="16" bkcolor="#ff00a0e9" />
+					<Button name="ButtonStartVoiceOnToRecord" text="开始语音输入" float="true" pos="620,5,0,0" enabled="true" width="120" height="35" textcolor="#FF313131" bordercolor="#FFD2D2D2" font="1" bordersize="1" borderround="5,5"/>
+					<Button name="ButtonEndVoiceOnToRecord" text="停止语音输入" float="true" pos="766,5,0,0" enabled="false" width="120" height="35" textcolor="#FFe3e4e8" bordercolor="#FFD2D2D2" font="1" bordersize="1" borderround="5,5"/>
+				</HorizontalLayout>
+				<HorizontalLayout width="1016" height="1" >
+					<Label float="true" pos="22,0,0,0" enabled="true" width="972" height="1" bkcolor="FFe3e4e8" />
+				</HorizontalLayout>
+				<HorizontalLayout  enabled="true" width="1016" height="249" >
+					<RichEdit name="EditDiagnosisDescOnToRecord" bordersize="1" float="true" pos="131,29,0,0" vscrollbar="true" enabled="true" width="755" height="166" bkcolor="#FFFFFFFF" bordercolor="#00D2D2D2" textpadding="10,3,10,3" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="1" />
+					<Label text="字数不能超过1500字。" float="true" pos="131,204,0,0"  enabled="true" width="750" height="16" textcolor="#00eb6877" disabledtextcolor="#FFA7A6AA" font="10" />	
+				</HorizontalLayout >	
+				<HorizontalLayout width="1016" height="1" >
+					<Label float="true" pos="22,0,0,0" enabled="true" width="972" height="1" bkcolor="FFe3e4e8" />
+				</HorizontalLayout>				
+				<HorizontalLayout width="1016" height="115">
+					<Button name="ButtonSubmitRecordOnDiag" float="true" pos="339,40,0,0" enabled="true" width="150" height="36" bkimage="Button/cont-btn-submit-record.png" />
+					<Button name="ButtonCancelSubmitRecordOnDiag" float="true" pos="552,40,0,0" width="150" height="36" bkimage="Button/cont-btn-cancel.png"  />
+				</HorizontalLayout>			
+			</VerticalLayout>
+		</VerticalLayout>
+	</VerticalLayout>
+</Window>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="886,49">
+    <ListContainerElement enabled="true" width="886" height="49">
+	        <Label float="true" pos="0,0,0,0" name="LabelAppointmentTimeOnAMLine" text="" enabled="true" width="222" height="49" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="1" align="center" />
+            <Label float="true" pos="222,0,0,0" name="LabelAppointmentDoctorOnAMLine" text="" enabled="true" width="132" height="49" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="1" align="center" />
+            <Label float="true" pos="354,0,0,0" name="LabelAppointmentPatientOnAMLine" text="" enabled="true" width="142" height="49" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="1" align="center" />
+            <Label float="true" pos="496,0,0,0" name="LabelAppointmentStatusOnAMLine" text="" enabled="true" width="142" height="49" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="1" align="center" />
+            <HorizontalLayout enabled="true" float="true" pos="638,0,0,0"  width="248" height="49" >
+				<ListItemButton name="ButtonCheckAppointDetail"  float="true" pos="92,10,0,0" enabled="true" width="64" height="30" bkimage="Button/cont-btn-icon-document.png" hotimage="Button/cont-btn-icon-document-hover.png"/>                
+            </HorizontalLayout>
+    </ListContainerElement>
+</Window>

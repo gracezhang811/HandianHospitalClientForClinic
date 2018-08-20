@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="936,130">
+    <ListContainerElement enabled="true" width="936" height="130">
+		<VerticalLayout name="container_expertname" float="true" pos="0,0,0,0" bkcolor="#FFFFFFFF" width="103" height="130" >
+			<Control name="ControlExpertImgOnExpertTimeLine" float="true" pos="10,10,0,0" enabled="true" width="80" height="80" />
+			<Control  float="true" pos="10,10,0,0" enabled="true" bkimage="bkimage/header-mask-s.png" width="80" height="80" />		
+			<Label name="ExpertNameOnExpertWTLine" text="" textcolor="#FF313131" float="true" pos="10,104,0,0" font="0"  endellipsis="true" align="center" width="80" height="15" minwidth="16"  sepwidth="1" align="center"  />
+		</VerticalLayout>
+		<VerticalLayout name="ItemOfMonday" float="true" pos="103,0,0,0" bordersize="1,0,1,0" bordercolor="#FFe3e4e8" width="119" height="130" >
+			<Label name="" text="" textcolor="#FF313131" float="true" pos="0,12,0,0" font="0" endellipsis="true" align="center" width="119" height="24" minwidth="16"  sepwidth="1" align="center"  />
+			<Label name="" text="" float="true"  textcolor="#FF313131" pos="0,36,0,0" font="0" endellipsis="true" align="center" width="110" height="24" minwidth="16"  sepwidth="1" align="center"  />
+			<Label name="" text="" float="true"  textcolor="#FF313131" pos="0,60,0,0" font="0" endellipsis="true" align="center" width="110" height="24" minwidth="16"  sepwidth="1" align="center"  />
+		</VerticalLayout>
+		<VerticalLayout float="true" pos="222,0,0,0" bordersize="1,0,1,0" bordercolor="#FFe3e4e8" width="119" height="130" >
+			<Label name="" text="" float="true" textcolor="#FF313131" pos="0,12,0,0" font="0" endellipsis="true" align="center" width="119" height="24" minwidth="16"  sepwidth="1" align="center"  />
+			<Label name="" text="" float="true"  textcolor="#FF313131" pos="0,36,0,0" font="0" endellipsis="true" align="center" width="110" height="24" minwidth="16"  sepwidth="1" align="center"  />
+			<Label name="" text="" float="true"  textcolor="#FF313131" pos="0,60,0,0" font="0" endellipsis="true" align="center" width="110" height="24" minwidth="16"  sepwidth="1" align="center"  />
+		</VerticalLayout>
+		<VerticalLayout float="true" pos="341,0,0,0" bordersize="1,0,1,0" bordercolor="#FFe3e4e8" width="119" height="130" >
+			<Label name="" text="" float="true" textcolor="#FF313131" pos="0,12,0,0" font="0" endellipsis="true" align="center" width="119" height="24" minwidth="16"  sepwidth="1" align="center"  />
+			<Label name="" text="" float="true"  textcolor="#FF313131" pos="0,36,0,0" font="0" endellipsis="true" align="center" width="110" height="24" minwidth="16"  sepwidth="1" align="center"  />
+			<Label name="" text="" float="true"  textcolor="#FF313131" pos="0,60,0,0" font="0" endellipsis="true" align="center" width="110" height="24" minwidth="16"  sepwidth="1" align="center"  />
+		</VerticalLayout>
+		<VerticalLayout float="true" pos="460,0,0,0" bordersize="1,0,1,0" bordercolor="#FFe3e4e8" width="119" height="130" >
+			<Label name="" text="" float="true" textcolor="#FF313131" pos="0,12,0,0" font="0" endellipsis="true" align="center" width="119" height="24" minwidth="16"  sepwidth="1" align="center"  />
+			<Label name="" text="" float="true"  textcolor="#FF313131" pos="0,36,0,0" font="0" endellipsis="true" align="center" width="110" height="24" minwidth="16"  sepwidth="1" align="center"  />
+			<Label name="" text="" float="true"  textcolor="#FF313131" pos="0,60,0,0" font="0" endellipsis="true" align="center" width="110" height="24" minwidth="16"  sepwidth="1" align="center"  />
+		</VerticalLayout>
+		<VerticalLayout float="true" pos="579,0,0,0" bordersize="1,0,1,0" bordercolor="#FFe3e4e8" width="119" height="130" >
+			<Label name="" text="" float="true" textcolor="#FF313131" pos="0,12,0,0" font="0" endellipsis="true" align="center" width="119" height="24" minwidth="16"  sepwidth="1" align="center"  />
+			<Label name="" text="" float="true"  textcolor="#FF313131" pos="0,36,0,0" font="0" endellipsis="true" align="center" width="110" height="24" minwidth="16"  sepwidth="1" align="center"  />
+			<Label name="" text="" float="true"  textcolor="#FF313131" pos="0,60,0,0" font="0" endellipsis="true" align="center" width="110" height="24" minwidth="16"  sepwidth="1" align="center"  />
+		</VerticalLayout>
+		<VerticalLayout float="true" pos="698,0,0,0" bordersize="1,0,1,0" bordercolor="#FFe3e4e8" width="119" height="130" >
+			<Label name="" text="" float="true" textcolor="#FF313131" pos="0,12,0,0" font="0" endellipsis="true" align="center" width="119" height="24" minwidth="16"  sepwidth="1" align="center"  />
+			<Label name="" text="" float="true"  textcolor="#FF313131" pos="0,36,0,0" font="0" endellipsis="true" align="center" width="110" height="24" minwidth="16"  sepwidth="1" align="center"  />
+			<Label name="" text="" float="true"  textcolor="#FF313131" pos="0,60,0,0" font="0" endellipsis="true" align="center" width="110" height="24" minwidth="16"  sepwidth="1" align="center"  />
+		</VerticalLayout>
+		<VerticalLayout float="true" pos="817,0,0,0" bordersize="1,0,1,0" bordercolor="#FFe3e4e8" width="119" height="130" >
+			<Label name="" text="" float="true" textcolor="#FF313131" pos="0,12,0,0" font="0" endellipsis="true" align="center" width="119" height="24" minwidth="16"  sepwidth="1" align="center"  />
+			<Label name="" text="" float="true"  textcolor="#FF313131" pos="0,36,0,0" font="0" endellipsis="true" align="center" width="110" height="24" minwidth="16"  sepwidth="1" align="center"  />
+			<Label name="" text="" float="true"  textcolor="#FF313131" pos="0,60,0,0" font="0" endellipsis="true" align="center" width="110" height="24" minwidth="16"  sepwidth="1" align="center"  />
+		</VerticalLayout>		
+    </ListContainerElement>
+</Window>

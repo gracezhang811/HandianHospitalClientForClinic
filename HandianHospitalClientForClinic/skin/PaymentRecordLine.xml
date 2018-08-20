@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="886,49">
+    <ListContainerElement enabled="true" width="886" height="49">
+		<Label name="LabelMeetingStartTimeOnPayLine" float="true" pos="0,0,0,0"  text="" enabled="true" width="180" height="49" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="1" align="center" />
+		<Label name="LabelMeetingEndTimeOnPayLine"  float="true" pos="180,0,0,0"  text="" enabled="true" width="180" height="49" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="1" align="center" />
+		<Label name="LabelExpertNameOnPayLine"  float="true" pos="360,0,0,0"  text="" enabled="true" width="110" height="49" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="1" align="center" />	
+		<Label name="LabelPatientNameOnPayLine"  float="true" pos="470,0,0,0"  text="" enabled="true" width="110" height="49" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="1" align="center" />           
+		<Label name="LabelPayTypeOnPayLine"  float="true" pos="580,0,0,0"  text="" enabled="true" width="132" height="49" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="1" align="center" />			
+		<Label name="LabelCostOnPayLine" float="true" pos="712,0,0,0"  text="" enabled="true" width="174" height="49" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="1" align="center" />		
+	</ListContainerElement>
+</Window>

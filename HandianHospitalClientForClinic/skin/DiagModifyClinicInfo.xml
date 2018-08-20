@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="420,294">
+    <Font name="" id="0" size="18" bold="true" italic="false" />
+    <VerticalLayout enabled="true" width="420" height="294" bkcolor="#FFFFFFFF" >
+        <HorizontalLayout enabled="true" width="420" height="120" > 
+			<Label float="true" pos="103,0,0,0" enabled="true" width="212" height="120" bkimage="bkimage/cont-windows-bg-b.png"/>
+		</HorizontalLayout>    
+		<HorizontalLayout enabled="true" width="420" height="63">
+            <Label text="尊敬的用户，您还有预约未完成，请等待" float="true" pos="0,17,0,0" enabled="true" width="420" height="23" align="center" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0"/>
+			<Label text="诊疗结束后再修改诊所信息，谢谢。" float="true" pos="0,40,0,0" enabled="true" width="420" height="23" align="center" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" />
+		</HorizontalLayout>
+		<HorizontalLayout enabled="true" width="420" height="55"/>
+        <HorizontalLayout enabled="true" width="420" height="26">
+            <Button name="ButtonConfirmModifyClinicInfoHint" float="true" pos="180,0,0,0" enabled="true" width="60" height="26" bkimage="Button/cont-windows-accept.png" />
+            </HorizontalLayout>
+    </VerticalLayout>
+</Window>

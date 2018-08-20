@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="886,148">
+    <ListContainerElement enabled="true" width="886" height="148">
+		<Label name="LabelAppointmentTimeOnCAMLine" text="" float="true" pos="0,0,0,0" enabled="true" text="" enabled="true" width="208" height="148" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="1" align="center"  />
+		<Control name="ControlExpertImgOnCAMLine" float="true" pos="292,17,0,0" enabled="true" width="80" height="80" />
+		<Control  float="true" pos="292,17,0,0" enabled="true" bkimage="bkimage/header-mask-s.png" width="80" height="80" />
+		<Label name="LabelExpertNameOnCAMLine" text="" float="true" pos="208,112,0,0" enabled="true" width="249" height="18" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="1" align="center"  />
+		<Label name="LabelPatientNameOnCAMLine" text="" float="true" pos="460,0,0,0" enabled="true" width="219" height="148" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="1" align="center"  />
+		<VerticalLayout float="true" pos="679,0,0,0" enabled="true" width="207" height="148">
+			<ListItemButton name="ButtonStartZoom"  float="true" borderround="4,4" pos="44,30,0,0" enabled="true" width="118" height="36" bkimage="Button/cont-btn-start-meeting.png" />
+			<ListItemButton name="ButtonToRecord"  float="true" borderround="4,4" pos="44,80,0,0" enabled="true" width="118" height="36" bkimage="Button/cont-btn-write-record.png" />
+		</VerticalLayout>
+    </ListContainerElement>
+</Window>

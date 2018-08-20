@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="894,718">
+	<VerticalLayout width="894" height="718">
+		<VerticalLayout name="container_recordlist"  visible="true" enabled="true" width="894" height="718" >
+			<HorizontalLayout enabled="true" width="894" height="50" bkimage="bkimage/cont-search-bg.png">
+				<Label text="按日期查询：" float="true" pos="10,0,0,0" enabled="true" width="120" height="50" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="right" />
+				<DateTime name="DateChooseOnSearchRecord" float="true" textpadding="10,0,0,0" textcolor="#FF313131" pos="135,12,0,0" font="0" width="150" height="26" bkimage="ComboBox/databox.png" /> 
+				<Label text="按专家：" float="true" pos="300,0,0,0" enabled="true" width="85" height="50" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="right" />
+				<Combo name="ComboChooseExpertOnSearchRecord" itemfont="0" enabled="true" mouse="true" float="true" pos="385,12,0,0" width="150" height="26" textcolor="#FF313131" textpadding="10,0,0,0" bkimage="ComboBox/Combobox.png" vscrollbar="true">
+				</Combo> 
+				<Label text="按患者：" float="true" pos="550,0,0,0" enabled="true" width="85" height="50" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="right" />
+				<Edit name="EditPatientNameOnSearchRecord" float="true" textpadding="10,0,0,0" textcolor="#FF313131" pos="635,12,0,0" font="0" width="150" height="26" bkcolor="#fff1faff" bordercolor="#ffb9c1c4" bordersize="1" /> 
+				<Button name="ButtonSearchRecord"  float="true" pos="823,12,0,0" enabled="true" width="60" height="26" bkimage="Button/cont-btn-search.png" />
+			</HorizontalLayout>		
+			<VerticalLayout enabled="true" width="894" height="668" bkimage="bkimage/cont-bg.png">
+				<HorizontalLayout enabled="true" width="894" height="68">
+					<Label float="true" pos="26,30,0,0" enabled="true" width="136" height="26" bkimage="Text/cont-title-WDZDJL.png" />
+					<Label text="请注意，只有会诊实际结束24小时内可以修改诊断记录！" float="true" pos="533,30,0,0" enabled="true" width="350" height="26" textcolor="#FFeb6877"  font="10" align="right" />
+				</HorizontalLayout>				
+				<List name="ListRecord" float="true" pos="4,68,0,0" header="true" itemfont="1" itemalign="center" vscrollbar="true" itemhlinesize="1" bkcolor="#FFFFFFFF" itembkcolor="#FFf6f8fb" itemhlinecolor="#FFe3e4e8" enabled="true" width="886" height="540" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" itemaltbk="true" >
+				<ListHeader name="domain" bkimage="bkimage/table-head-bg.png" >
+						<ListHeaderItem text="预约时间" font="0" endellipsis="true" textcolor="#ffffffff" align="center" width="222" height="40" minwidth="16"  sepwidth="1" align="center"  />
+						<ListHeaderItem text="专家" font="0" endellipsis="true" textcolor="#ffffffff"  align="center" width="132" height="40" minwidth="16"  sepwidth="1" align="center"  />
+						<ListHeaderItem text="患者" font="0" endellipsis="true" textcolor="#ffffffff"  align="center" width="142" height="40" minwidth="16"  sepwidth="1" align="center"  />           
+						<ListHeaderItem text="主述" font="0" endellipsis="true" textcolor="#ffffffff"  align="center" width="212" height="40" minwidth="16"  sepwidth="1" align="center"  />			
+						<ListHeaderItem text="操作" font="0" endellipsis="true" textcolor="#ffffffff"  align="center" width="178" height="40" minwidth="16"  sepwidth="1" align="center"  />		
+				</ListHeader>	
+				</List>				
+				<HorizontalLayout enabled="true" float="true" pos="0,600,0,0" width="894" height="62">
+					<Button name="ButtonFirstPageOfRecord"  float="true" pos="337,20,0,0" enabled="true" width="48" height="24" bkimage="Button/cont-btn-list-a.png" />
+					<Button name="ButtonPreviousPageOfRecord"  float="true" pos="388,20,0,0" enabled="true" width="58" height="24" bkimage="Button/cont-btn-list-b.png" />
+					<Button name="ButtonNextPageOfRecord"  float="true" pos="449,20,0,0" enabled="true" width="58" height="24" bkimage="Button/cont-btn-list-c.png" />
+					<Button name="ButtonEndPageOfRecord"  float="true" pos="510,20,0,0" enabled="true" width="48" height="24" bkimage="Button/cont-btn-list-d.png" />
+					<Label text="共" float="true" pos="725,25,0,0" enabled="true" width="16" height="14" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="right" />
+					<Label name="LabelPageNumOnRecord" text="120" float="true" pos="741,25,0,0" enabled="true" width="25" height="14" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="center" />
+					<Label text="页 当前第" float="true" pos="766,25,0,0" enabled="true" width="70" height="14" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="center" />
+					<Label name="LabelCurrentPageNumOnRecord" text="120" float="true" pos="836,25,0,0" enabled="true" width="25" height="14" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="center" />
+					<Label text="页" float="true" pos="861,26,0,0" enabled="true" width="25" height="14" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="right" />
+				</HorizontalLayout>
+			</VerticalLayout>
+		</VerticalLayout>
+		
+		<VerticalLayout name="container_recorddetail" visible="false"  enabled="true" width="894" height="718" bkimage="bkimage/cont-bg-2.png">
+			<HorizontalLayout enabled="true" width="894" height="68">
+				<Label float="true" pos="26,30,0,0" enabled="true" width="136" height="26" bkimage="Text/cont-title-ZDJLXQ.png" />
+				<Button name="ButtonReturnToRecordList"  float="true" pos="772,37,0,0" enabled="true" width="107" height="15" bkimage="Button/cont-btn-back-A.png" />
+			</HorizontalLayout>
+			<VerticalLayout enabled="true" float="true" pos="4,68,0,0" width="886" height="650" bkcolor="#FFFFFFFF" bordercolor="FFe3e4e8" bordersize="1" borderround="5,5"  vscrollbar="true">
+				<HorizontalLayout enabled="true" width="886" height="45">
+					<Label text="基本信息" float="true" pos="22,16,0,0" enabled="true" width="200" height="16" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="5" />
+					<Label float="true" pos="14,16,0,0"  width="2" height="16" bkcolor="#ff00a0e9" />
+				</HorizontalLayout>
+				<HorizontalLayout width="886" height="1" >
+					<Label float="true" pos="22,0,0,0" enabled="true" width="842" height="1" bkcolor="FFe3e4e8" />
+				</HorizontalLayout>
+				<HorizontalLayout enabled="true" width="886" height="65">
+					<Label text="会诊专家" float="true" pos="54,29,0,0" enabled="true" width="84" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Label name="LabelExpertNameOnRecordDetail" text=""  float="true" pos="148,29,0,0" enabled="true" width="290" height="36" textcolor="#FF313131" font="1"/>
+				</HorizontalLayout>
+				<HorizontalLayout enabled="true" width="700" height="50">
+					<Label text="会诊开始时间" float="true" pos="54,14,0,0" enabled="true" width="94" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Label name="LabelStartTimeOnRecordDetail" text=""  float="true" pos="148,14,0,0" enabled="true" width="200" height="36" textcolor="#FF313131" font="1" />
+					<Label text="结束时间" float="true" pos="383,14,0,0" enabled="true" width="84" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Label name="LabelEndTimeOnRecordDetail" text=""  float="true" pos="478,14,0,0" enabled="true" width="200" height="36" textcolor="#FF313131" font="1" />	
+				</HorizontalLayout>
+				<HorizontalLayout enabled="true" width="886" height="28"/>
+				<HorizontalLayout enabled="true" width="886" height="42">
+					<HorizontalLayout float="true" pos="4,0,0,0" enabled="true" width="850" height="42" bkimage="bkimage/cont-tab-bg.png">
+						<Option name="OptionPatientConditionPageOnRecord" bkcolor="#FFFFFFFF" text="主述" float="true" pos="50,6,0,0" enabled="true" width="80" height="36" textcolor="#ff313131" selected="true" font="4" align="center" />
+						<Option name="OptionPatientPicPageOnRecord" text="相关图像" float="true" pos="134,6,0,0" enabled="true" width="80" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="4" align="center" />
+					</HorizontalLayout>
+				</HorizontalLayout>				
+				<VerticalLayout enabled="true" width="886" height="249" >
+					<TabLayout name="switchPatientInfoTypeOnRecord">
+						<HorizontalLayout enabled="true" width="886" height="220">
+							<RichEdit name="LabelPatientDescNameOnRecordDetail"  float="true" pos="50,29,0,0" vscrollbar="true" enabled="false" width="755" height="166" bkcolor="#FFFFFFFF"  textpadding="10,3,10,3" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="1" />
+						</HorizontalLayout>
+						<HorizontalLayout enabled="true" width="886" height="220">
+							<Button name="ButtonShowPatientPic1OnRecord"  float="true" pos="50,29,0,0" enabled="true" width="166" height="166" />
+							<Button name="ButtonShowPatientPic2OnRecord" float="true" pos="240,29,0,0" enabled="true"  width="166" height="166" />
+							<Button name="ButtonShowPatientPic3OnRecord" float="true" pos="430,29,0,0" enabled="true" width="166" height="166" />
+						</HorizontalLayout>
+					</TabLayout>
+				</VerticalLayout>	
+				
+				<HorizontalLayout enabled="true" width="886" height="45">
+					<Label text="患者信息" float="true" pos="22,16,0,0" enabled="true" width="200" height="16" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="5" />
+					<Label float="true" pos="14,16,0,0"  width="2" height="16" bkcolor="#ff00a0e9" />
+				</HorizontalLayout>
+				<HorizontalLayout width="886" height="1" >
+					<Label float="true" pos="22,0,0,0" enabled="true" width="842" height="1" bkcolor="FFe3e4e8" />
+				</HorizontalLayout>
+
+				<HorizontalLayout enabled="true" width="886" height="65">
+					<Label text="患者姓名" float="true" pos="54,29,0,0" enabled="true" width="84" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Label name="LabelPatientNameOnRecordDetail" text="" float="true" pos="148,29,0,0" font="1" textcolor="#FF313131" enabled="true" width="290" height="36" />
+					<Label text="性别" float="true" pos="333,29,0,0" enabled="true" width="65" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Label name="LabelPatientSexOnRecordDetail" text=""  float="true" pos="398,29,0,0" font="1" textcolor="#FF313131" enabled="true" width="290" height="36" />			
+					<Label text="年龄" float="true" pos="512,29,0,0" enabled="true" width="65" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Label name="LabelPatientAgeOnRecordDetail" text="" float="true" pos="577,29,0,0" font="1" textcolor="#FF313131" enabled="true" width="290" height="36" />	
+				</HorizontalLayout>
+				<HorizontalLayout enabled="true" width="700" height="40">
+					<Label text="手机号" float="true" pos="54,4,0,0" enabled="true" width="84" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Label name="LabelPatientPhoneOnRecordDetail" text="" float="true" pos="148,4,0,0" font="1" textcolor="#FF313131" enabled="true" width="290" height="36"  />			
+					<Label text="身份证号" float="true" pos="333,4,0,0" enabled="true" width="65" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Label name="LabelPatientIDOnRecordDetail" text="" float="true" pos="398,4,0,0" font="1" textcolor="#FF313131" enabled="true" width="290" height="36"  />			
+				</HorizontalLayout>
+				<HorizontalLayout width="886" height="34"/>	
+				
+				<HorizontalLayout enabled="true" width="886" height="45">
+					<Label text="专家意见" float="true" pos="22,16,0,0" enabled="true" width="200" height="16" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="5" />
+					<Label float="true" pos="14,16,0,0"  width="2" height="16" bkcolor="#ff00a0e9" />
+				</HorizontalLayout>
+				<HorizontalLayout width="886" height="1" >
+					<Label float="true" pos="22,0,0,0" enabled="true" width="842" height="1" bkcolor="FFe3e4e8" />
+				</HorizontalLayout>
+				<HorizontalLayout enabled="true" width="886" height="220" >
+					<RichEdit name="LabelExpertAdviseOnRecordDetail" float="true" pos="50,29,0,0" vscrollbar="true" enabled="false" width="755" height="166"  textpadding="10,3,10,3" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="1" />
+				</HorizontalLayout >	
+
+				<HorizontalLayout enabled="true" width="886" height="45">
+					<Label text="诊断信息" float="true" pos="22,16,0,0" enabled="true" width="200" height="16" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="5" />
+					<Label float="true" pos="14,16,0,0"  width="2" height="16" bkcolor="#ff00a0e9" />
+				</HorizontalLayout>
+				<HorizontalLayout width="886" height="1" >
+					<Label float="true" pos="22,0,0,0" enabled="true" width="842" height="1" bkcolor="FFe3e4e8" />
+				</HorizontalLayout>
+				<HorizontalLayout  enabled="true" width="886" height="220" >
+					<RichEdit name="LabelDiagnosisDescOnRecordDetail" float="true" pos="50,29,0,0" vscrollbar="true" enabled="false" width="755" height="166"  textpadding="10,3,10,3" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="1" />
+				</HorizontalLayout >	
+
+				<HorizontalLayout enabled="true" width="886" height="45">
+					<Label text="音频回放" float="true" pos="22,16,0,0" enabled="true" width="200" height="16" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="5" />
+					<Label float="true" pos="14,16,0,0"  width="2" height="16" bkcolor="#ff00a0e9" />
+				</HorizontalLayout>	
+				<HorizontalLayout width="886" height="1" >
+					<Label float="true" pos="22,0,0,0" enabled="true" width="842" height="1" bkcolor="FFe3e4e8" />
+				</HorizontalLayout>				
+				<HorizontalLayout  width="886" height="92" >
+					<Button name="ButtonPlayMp3Record" text="" visible="true" bkimage="Button/cont-audio-play.png"  float="true" pos="66,41,0,0" enabled="true" width="46" height="46"  />
+					<Button name="ButtonPauseMp3Record" text="" visible="false" bkimage="Button/cont-audio-suspended.png"  float="true" pos="136,41,0,0" enabled="true" width="46" height="46"  />
+					<Button name="ButtonStopMp3Record" text="" visible="false" bkimage="Button/cont-audio-stop.png"  float="true" pos="206,41,0,0" enabled="true" width="46" height="46"  />	
+				</HorizontalLayout>										
+				<HorizontalLayout width="886" height="50"/>				
+			</VerticalLayout>
+		</VerticalLayout>
+		
+		<VerticalLayout name="container_editrecord" visible="false"  enabled="true" width="894" height="718" bkimage="bkimage/cont-bg-2.png">
+			<HorizontalLayout enabled="true" width="894" height="68">
+				<Label float="true" pos="26,30,0,0" enabled="true" width="136" height="26" bkimage="Text/cont-title-ZDJLXG.png" />
+				<Button name="ButtonReturnToRecordListOnEditRD"  float="true" pos="772,37,0,0" enabled="true" width="107" height="15" bkimage="Button/cont-btn-back-A.png" />
+			</HorizontalLayout>
+			<VerticalLayout enabled="true" float="true" pos="4,68,0,0" width="886" height="650" bkcolor="#FFFFFFFF" bordercolor="FFe3e4e8" bordersize="1" borderround="5,5"  vscrollbar="true">
+				<HorizontalLayout enabled="true" width="886" height="45">
+					<Label text="基本信息" float="true" pos="22,16,0,0" enabled="true" width="200" height="16" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="5" />
+					<Label float="true" pos="14,16,0,0"  width="2" height="16" bkcolor="#ff00a0e9" />
+				</HorizontalLayout>
+				<HorizontalLayout width="886" height="1" >
+					<Label float="true" pos="22,0,0,0" enabled="true" width="842" height="1" bkcolor="FFe3e4e8" />
+				</HorizontalLayout>
+				<HorizontalLayout enabled="true" width="886" height="65">
+					<Label text="会诊专家" float="true" pos="54,29,0,0" enabled="true" width="84" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Label name="LabelExpertNameOnRecordEdit" text=""  float="true" pos="148,29,0,0" enabled="true" width="290" height="36" textcolor="#FF313131" font="1"/>
+				</HorizontalLayout>
+				<HorizontalLayout enabled="true" width="700" height="50">
+					<Label text="会诊开始时间" float="true" pos="54,14,0,0" enabled="true" width="94" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Label name="LabelStartTimeOnRecordEdit" text=""  float="true" pos="148,14,0,0" enabled="true" width="200" height="36" textcolor="#FF313131" font="1" />
+					<Label text="结束时间" float="true" pos="383,14,0,0" enabled="true" width="84" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Label name="LabelEndTimeOnRecordEdit" text=""  float="true" pos="478,14,0,0" enabled="true" width="200" height="36" textcolor="#FF313131" font="1" />	
+				</HorizontalLayout>
+				<HorizontalLayout enabled="true" width="886" height="28"/>
+				<HorizontalLayout enabled="true" width="886" height="42">
+					<HorizontalLayout float="true" pos="4,0,0,0" enabled="true" width="850" height="42" bkimage="bkimage/cont-tab-bg.png">
+						<Option name="OptionPatientConditionPageOnEditRecord" bkcolor="#FFFFFFFF" text="主述" float="true" pos="50,6,0,0" enabled="true" width="80" height="36" textcolor="#ff313131" selected="true" font="4" align="center" />
+						<Option name="OptionPatientPicPageOnEditRecord" text="相关图像" float="true" pos="134,6,0,0" enabled="true" width="80" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="4" align="center" />
+					</HorizontalLayout>
+				</HorizontalLayout>				
+				<VerticalLayout enabled="true" width="886" height="249" >
+					<TabLayout name="switchPatientInfoTypeOnEditRecord">
+						<HorizontalLayout enabled="true" width="886" height="220">
+							<RichEdit name="LabelPatientDescOnRecordEdit"  float="true" pos="50,29,0,0" vscrollbar="true" enabled="false" width="755" height="166" bkcolor="#FFFFFFFF"  textpadding="10,3,10,3" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="1" />
+						</HorizontalLayout>
+						<HorizontalLayout enabled="true" width="886" height="220">
+							<Control name="ConteolShowPatientPic1OnRecordEdit"  float="true" pos="50,29,0,0" enabled="true" width="166" height="166" />
+							<Control name="ConteolShowPatientPic2OnRecordEdit"  float="true" pos="240,29,0,0" enabled="true"  width="166" height="166" />
+							<Control name="ConteolShowPatientPic3OnRecordEdit"  float="true" pos="430,29,0,0" enabled="true" width="166" height="166" />
+						</HorizontalLayout>
+					</TabLayout>
+				</VerticalLayout>	
+				
+				<HorizontalLayout enabled="true" width="886" height="55">
+					<Label text="患者信息" float="true" pos="22,16,0,0" enabled="true" width="200" height="16" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="5" />
+					<Label float="true" pos="14,16,0,0"  width="2" height="16" bkcolor="#ff00a0e9" />
+				</HorizontalLayout>
+				<HorizontalLayout width="886" height="1" >
+					<Label float="true" pos="22,0,0,0" enabled="true" width="842" height="1" bkcolor="FFe3e4e8" />
+				</HorizontalLayout>
+
+				<HorizontalLayout enabled="true" width="886" height="65">
+					<Label text="患者姓名" float="true" pos="54,29,0,0" enabled="true" width="84" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Label name="LabelPatientNameOnRecordEdit" text="" float="true" pos="148,29,0,0" font="1" textcolor="#FF313131" enabled="true" width="290" height="36" />
+					<Label text="性别" float="true" pos="333,29,0,0" enabled="true" width="65" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Option name="CheckPatientMaleOnRecordEdit" text="男" selected="true" float="true" pos="404,29,0,0" textpadding="18,0,0,0" font="1" width="50" height="36" group="Radio" align="left"  selectedimage="file='Radio/RadioBtnSel.png' source='0,0,14,14' dest='0,11,14,25'" normalimage="file='Radio/RadioBtnNon.png' source='0,0,14,14' dest='0,11,14,25'" />
+					<Option name="CheckPatientFemaleOnRecordEdit" text="女" float="true" pos="464,29,0,0" textpadding="18,0,0,0" font="1" width="50" height="36" group="Radio" align="left"  selectedimage="file='Radio/RadioBtnSel.png' source='0,0,14,14' dest='0,11,14,25'" normalimage="file='Radio/RadioBtnNon.png' source='0,0,14,14' dest='0,11,14,25'" />			
+					<Label text="年龄" float="true" pos="613,29,0,0" enabled="true" width="40" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Edit name="EditPatientAgeOnRecordEdit" float="true" textpadding="10,0,0,0" textcolor="#FF313131" pos="655,29,0,0" font="1" width="110" height="36" bkcolor="#00000000" bordercolor="#ffb9c1c4" bordersize="1" />	
+				</HorizontalLayout>
+				<HorizontalLayout enabled="true" width="886" height="40">
+					<Label text="手机号" float="true" pos="54,4,0,0" enabled="true" width="84" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Edit name="EditPatientPhoneOnRecordEdit" float="true" textpadding="10,0,0,0" textcolor="#FF313131" pos="144,4,0,0" font="1" width="170" height="36" bkcolor="#00000000" bordercolor="#ffb9c1c4" bordersize="1" />			
+					<Label text="身份证号" float="true" pos="333,4,0,0" enabled="true" width="65" height="36" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" />
+					<Edit name="EditPatientIDOnRecordEdit" float="true" textpadding="10,0,0,0" textcolor="#FF313131" pos="404,4,0,0" font="1" width="360" height="36" bkcolor="#00000000" bordercolor="#ffb9c1c4" bordersize="1" />			
+				</HorizontalLayout>
+				<HorizontalLayout width="886" height="34"/>	
+				
+				<HorizontalLayout enabled="true" width="886" height="45">
+					<Label text="专家意见" float="true" pos="22,16,0,0" enabled="true" width="200" height="16" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="5" />
+					<Label float="true" pos="14,16,0,0"  width="2" height="16" bkcolor="#ff00a0e9" />
+				</HorizontalLayout>
+				<HorizontalLayout width="886" height="1" >
+					<Label float="true" pos="22,0,0,0" enabled="true" width="842" height="1" bkcolor="FFe3e4e8" />
+				</HorizontalLayout>
+				<HorizontalLayout enabled="true" width="886" height="220" >
+					<RichEdit name="LabelExpertAdviseOnRecordEdit" float="true" pos="50,29,0,0" vscrollbar="true" enabled="false" width="755" height="166"  textpadding="10,3,10,3" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="1" />
+				</HorizontalLayout >	
+
+				<HorizontalLayout enabled="true" width="886" height="45">
+					<Label text="诊断信息" float="true" pos="22,16,0,0" enabled="true" width="200" height="16" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="5" />
+					<Label float="true" pos="14,16,0,0"  width="2" height="16" bkcolor="#ff00a0e9" />
+				</HorizontalLayout>
+				<HorizontalLayout width="886" height="1" >
+					<Label float="true" pos="22,0,0,0" enabled="true" width="842" height="1" bkcolor="FFe3e4e8" />
+				</HorizontalLayout>
+				<HorizontalLayout  enabled="true" width="886" height="249" >
+					<RichEdit name="EditDiagnosisDescOnRecordEdit" bordersize="1" float="true" pos="50,29,0,0" vscrollbar="true" enabled="true" width="755" height="166" bkcolor="#FFFFFFFF" bordercolor="#00D2D2D2" textpadding="10,3,10,3" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="1" />
+					<Label text="字数不能超过1500字。" float="true" pos="50,204,0,0"  enabled="true" width="750" height="16" textcolor="#00eb6877" disabledtextcolor="#FFA7A6AA" font="10" />	
+				</HorizontalLayout >	
+				<HorizontalLayout width="886" height="1" >
+					<Label float="true" pos="22,0,0,0" enabled="true" width="842" height="1" bkcolor="FFe3e4e8" />
+				</HorizontalLayout>				
+				<HorizontalLayout width="886" height="115">
+					<Button name="ButtonSubmitEditRecord" float="true" pos="275,40,0,0" enabled="true" width="150" height="36" bkimage="Button/cont-btn-submit-record.png" />
+					<Button name="ButtonCancelSubmitEditRecord" float="true" pos="455,40,0,0" width="150" height="36" bkimage="Button/cont-btn-cancel.png"  />
+				</HorizontalLayout>			
+			</VerticalLayout>
+		</VerticalLayout>
+
+	</VerticalLayout>
+</Window>

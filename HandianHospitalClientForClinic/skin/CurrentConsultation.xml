@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="894,718">
+	<VerticalLayout width="894" height="718" bkimage="bkimage/cont-bg-2.png">
+		<HorizontalLayout enabled="true" width="894" height="68">
+			<Label float="true" pos="26,30,0,0" enabled="true" width="91" height="26" bkimage="Text/cont-title-DRZL.png" />
+		</HorizontalLayout>
+		<VerticalLayout enabled="true" float="true" pos="4,68,0,0" width="886" height="650" bkcolor="#FFFFFFFF" bordercolor="FFe3e4e8" bordersize="1" borderround="5,5"  vscrollbar="true">
+			<Label name="LabelDateUI" text=""  enabled="true" width="886" height="44" textcolor="#FF313131" font="6" align="center" />
+			<List name="ListCAppointment" float="true" pos="0,44,0,0" bordersize="1" header="true" itemfont="1" itemalign="center" vscrollbar="true" itemhlinesize="1" bkcolor="#FFFFFFFF"  itemhlinecolor="#FFe3e4e8" enabled="true" width="886" height="606" bordercolor="#FFe3e4e8" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" >
+				<ListHeader name="domain" bkimage="bkimage/table-head-bg.png" >
+					<ListHeaderItem text="会诊时间" font="0" endellipsis="true" textcolor="#ffffffff" align="center" width="208" height="40" minwidth="16"  sepwidth="1" align="center"  />
+					<ListHeaderItem text="专家" font="0" endellipsis="true" textcolor="#ffffffff"  align="center" width="249" height="40" minwidth="16"  sepwidth="1" align="center"  />
+					<ListHeaderItem text="患者" font="0" endellipsis="true" textcolor="#ffffffff"  align="center" width="219" height="40" minwidth="16"  sepwidth="1" align="center"  />
+					<ListHeaderItem text="操作" font="0" endellipsis="true" textcolor="#ffffffff"  align="center" width="207" height="40" minwidth="16"  sepwidth="1" align="center"  />		
+				</ListHeader>			
+			</List>
+			<Label name="LabelWaitMeetingStart" visible="false" text="正在启动视频会议，请稍候。" float="true" pos="0,290,0,0" enabled="true" width="886" height="50" textcolor="#FFFF0000" disabledtextcolor="#FFA7A6AA" font="7" align="center" />	
+		</VerticalLayout>		
+    </VerticalLayout>
+</Window>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Window size="894,718">
+	<VerticalLayout width="894" height="718" bkimage="bkimage/cont-bg-2.png">
+		<HorizontalLayout enabled="true" width="894" height="68">
+			<Label float="true" pos="26,30,0,0" enabled="true" width="91" height="26" bkimage="Text/cont-title-ZSXX.png" />
+			<Button name="ButtonCloseEXE"  float="true" pos="808,26,0,0" enabled="true" width="70" height="26" bkimage="Button/cont-btn-quit.png" />
+		</HorizontalLayout>
+		<VerticalLayout enabled="true" float="true" pos="4,68,0,0" width="886" height="650" bkcolor="#FFFFFFFF" bordercolor="FFe3e4e8" bordersize="1" borderround="5,5" >
+			<HorizontalLayout enabled="true" width="886" height="47">
+				<Option name="OptionUserInfoPage" text="用户信息" float="true" pos="20,7,0,0" enabled="true" width="80" height="40" textcolor="#FF313131" selected="true" bkimage="bkimage/option_bk1.png" font="1" align="center" />
+				<Option name="OptionClinicInfoPage" text="诊所信息" float="true" pos="110,7,0,0" enabled="true" width="80" height="40" textcolor="#FF313131" font="1" align="center" bkimage="bkimage/option_bk2.png" />
+				<Label float="true" pos="720,18,0,0" text="版本：2.3.1" enabled="true" width="150" height="14" textcolor="FF004986" align="right"/>
+			</HorizontalLayout>	
+			<HorizontalLayout width="886" height="3" >
+				<Label float="true" pos="3,0,0,0" enabled="true" width="880" height="1" bkcolor="FFe3e4e8" />
+			</HorizontalLayout>			
+			<VerticalLayout enabled="true" width="886" height="600">
+			<TabLayout name="switchClinicInfoType">
+			<VerticalLayout enabled="true"  width="886" height="600" >
+				<VerticalLayout  name="container_showuserinfo" visible="true" vscrollbar="true" width="886" height="600" >	
+					<HorizontalLayout enabled="true" width="886" height="66"/>
+					<HorizontalLayout enabled="true" width="886" height="60">
+						<Label text="用户名" float="true" pos="251,10,0,0" enabled="true" width="80" height="40" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="left" />
+						<Label name="LabelUserNameOnUserInfo" float="true" pos="403,10,0,0" enabled="true" width="300" height="40" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="2" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="1">
+						<Label text="" float="true" pos="234,0,0,0"  width="376" height="1" bkcolor="#ffe3e4e8" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="60">
+						<Label text="邮箱" float="true" pos="251,10,0,0" enabled="true" width="80" height="40" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="left" />
+						<Label name="LabelUserEmailOnUserInfo" float="true" pos="403,10,0,0" enabled="true" width="300" height="40" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="2" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="1">
+						<Label text="" float="true" pos="234,0,0,0"  width="376" height="1" bkcolor="#ffe3e4e8" />
+					</HorizontalLayout>					
+					<HorizontalLayout enabled="true" width="886" height="87">
+						<Button name="ButtonEditUserInfo"  float="true" pos="387,57,0,0" enabled="true" width="64" height="30" bkimage="Button/cont-btn-edit-clinic.png" />
+					</HorizontalLayout>
+				</VerticalLayout>					
+				<VerticalLayout  name="container_edituserinfo" visible="false" vscrollbar="true" width="886" height="600"  >
+					<HorizontalLayout enabled="true" width="886" height="66"/>
+					<HorizontalLayout enabled="true" width="886" height="60">
+						<Label text="用户名" float="true" pos="251,10,0,0" enabled="true" width="80" height="40" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="left" />
+						<Edit name="EditUserNameOnUserInfo" float="true" pos="322,12,0,0" enabled="true" width="290" height="36" bkimage="Text/edit-appoint.png" textpadding="20,0,0,0" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="2" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="1">
+						<Label text="" float="true" pos="234,0,0,0"  width="376" height="1" bkcolor="#ffe3e4e8" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="60">
+						<Label text="邮箱" float="true" pos="251,10,0,0" enabled="true" width="80" height="40" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="left" />
+						<Edit name="EditUserEmailOnUserInfo"  float="true" pos="322,12,0,0" enabled="true" width="290" height="36" bkimage="Text/edit-appoint.png" textpadding="20,0,0,0" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="2" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="1">
+						<Label text="" float="true" pos="234,0,0,0"  width="376" height="1" bkcolor="#ffe3e4e8" />
+					</HorizontalLayout>					
+					<HorizontalLayout enabled="true" width="886" height="87">
+						<Button name="ButtonReferUserInfo" float="true" pos="366,57,0,0" enabled="true" width="64" height="30" bkimage="Button/cont-btn-modify-clinic.png" />
+						<Button name="ButtonCancelReferUserInfo" float="true" pos="436,57,0,0" enabled="true" width="64" height="30" bkimage="Button/cont-btn-clinic-cancel.png" />
+					</HorizontalLayout>
+				</VerticalLayout>	
+			</VerticalLayout>
+			
+			<VerticalLayout enabled="true" width="886" height="600" >
+				<VerticalLayout  name="container_showclinicinfo" visible="true" vscrollbar="true" width="886" height="600"  >
+					<HorizontalLayout enabled="true" width="886" height="66"/>
+					<HorizontalLayout enabled="true" width="886" height="60">
+						<Label text="诊所名称" float="true" pos="164,10,0,0" enabled="true" width="80" height="40" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="left" />
+						<Label name="LabelClinicNameOnClinicInfo" float="true" pos="314,10,0,0" enabled="true" width="300" height="40" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="2" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="1">
+						<Label text="" float="true" pos="145,0,0,0"  width="565" height="1" bkcolor="#ffe3e4e8" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="60">
+						<Label text="地址" float="true" pos="164,10,0,0" enabled="true" width="80" height="40" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="left" />
+						<Label name="LabelClinicAddrOnClinicInfo" float="true" pos="314,10,0,0" enabled="true" width="300" height="40" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="2" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="1">
+						<Label text="" float="true" pos="145,0,0,0"  width="565" height="1" bkcolor="#ffe3e4e8" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="60">
+						<Label text="联系电话" float="true" pos="164,10,0,0" enabled="true" width="80" height="40" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="left" />
+						<Label name="LabelClinicTelOnClinicInfo" float="true" pos="314,10,0,0" enabled="true" width="300" height="40" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="2" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="1">
+						<Label text="" float="true" pos="145,0,0,0"  width="565" height="1" bkcolor="#ffe3e4e8" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="60">
+						<Label text="法人代表" float="true" pos="164,10,0,0" enabled="true" width="80" height="40" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="left" />
+						<Label name="LabelClinicChiefOnClinicInfo" float="true" pos="314,10,0,0" enabled="true" width="300" height="40" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="2" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="1">
+						<Label text="" float="true" pos="145,0,0,0"  width="565" height="1" bkcolor="#ffe3e4e8" />
+					</HorizontalLayout>					
+					<HorizontalLayout enabled="true" width="886" height="60">
+						<Label text="身份证号码" float="true" pos="164,10,0,0" enabled="true" width="80" height="40" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="left" />
+						<Label name="LabelClinicIDCardOnClinicInfo" float="true" pos="314,10,0,0" enabled="true" width="300" height="40" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="2" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="1">
+						<Label text="" float="true" pos="145,0,0,0"  width="565" height="1" bkcolor="#ffe3e4e8" />
+					</HorizontalLayout>
+					<VerticalLayout enabled="true" width="700" height="212">
+						<Label text="营业许可证书：" float="true" pos="164,10,0,0" enabled="true" width="150" height="40" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="left" />
+						<Control name="LabelClinicBusinessLisenceOnClinicInfo" float="true" pos="314,21,0,0" enabled="true" bordersize="1" bordercolor="#FFD2D2D2" width="239" height="170" />
+					</VerticalLayout>
+					<HorizontalLayout enabled="true" width="886" height="1">
+						<Label text="" float="true" pos="145,0,0,0"  width="565" height="1" bkcolor="#ffe3e4e8" />
+					</HorizontalLayout>
+					<VerticalLayout enabled="true" width="700" height="212">
+						<Label text="诊所实景图片" float="true" pos="164,10,0,0" enabled="true" width="150" height="40" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="left" />
+						<Control name="LabelClinicLocalPhotoOnClinicInfo" float="true" pos="314,21,0,0" enabled="true" bordersize="1" bordercolor="#FFD2D2D2" width="239" height="170" />
+					</VerticalLayout >
+					<HorizontalLayout enabled="true" width="886" height="1">
+						<Label text="" float="true" pos="145,0,0,0"  width="565" height="1" bkcolor="#ffe3e4e8" />
+					</HorizontalLayout>	
+					<VerticalLayout enabled="true" width="700" height="212">
+						<Label text="医师执业许可证书" float="true" pos="164,10,0,0" enabled="true" width="150" height="40" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="left" />
+						<Control name="LabelClinicDoctorLisenceOnClinicInfo" float="true" pos="314,21,0,0" enabled="true" bordersize="1" bordercolor="#FFD2D2D2" width="239" height="170" />
+					</VerticalLayout >
+					<HorizontalLayout enabled="true" width="886" height="1">
+						<Label text="" float="true" pos="145,0,0,0"  width="565" height="1" bkcolor="#ffe3e4e8" />
+					</HorizontalLayout>						
+					<HorizontalLayout enabled="true" width="886" height="87">
+						<Button name="ButtonEditClinicInfo"  float="true" pos="387,57,0,0" enabled="true" width="64" height="30" bkimage="Button/cont-btn-edit-clinic.png" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="60"/>
+				</VerticalLayout>
+				
+				<VerticalLayout  name="container_editclinicinfo" visible="false" vscrollbar="true" pos="0,0,0,0" width="886" height="600" >
+					<HorizontalLayout enabled="true" width="886" height="66">
+						<Label text="注意：修改诊所信息后，需要审核通过才能再次预约！" float="true" pos="251,0,0,0" enabled="true" width="384" height="66" textcolor="#ffeb6877" disabledtextcolor="#FFA7A6AA" font="10" align="center" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="60">
+						<Label text="诊所名称" float="true" pos="164,10,0,0" enabled="true" width="80" height="40" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="left" />
+						<Edit name="EditClinicNameOnClinicInfo" float="true" pos="302,12,0,0" enabled="true" width="290" height="36" bkimage="Text/edit-appoint.png" textpadding="20,0,0,0" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="2" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="1">
+						<Label text="" float="true" pos="145,0,0,0"  width="565" height="1" bkcolor="#ffe3e4e8" />
+					</HorizontalLayout>	
+					<HorizontalLayout enabled="true" width="886" height="60">
+						<Label text="地址" float="true" pos="164,10,0,0" enabled="true" width="80" height="40" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="left" />
+						<Edit name="EditClinicAddrOnClinicInfo" float="true" pos="302,12,0,0" enabled="true" width="290" height="36" bkimage="Text/edit-appoint.png" textpadding="20,0,0,0" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="2" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="1">
+						<Label text="" float="true" pos="145,0,0,0"  width="565" height="1" bkcolor="#ffe3e4e8" />
+					</HorizontalLayout>		
+					<HorizontalLayout enabled="true" width="886" height="60">
+						<Label text="联系电话" float="true" pos="164,10,0,0" enabled="true" width="80" height="40" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="left" />
+						<Edit name="EditClinicTelOnClinicInfo" float="true" pos="302,12,0,0" enabled="true" width="290" height="36" bkimage="Text/edit-appoint.png" textpadding="20,0,0,0" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="2" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="1">
+						<Label text="" float="true" pos="145,0,0,0"  width="565" height="1" bkcolor="#ffe3e4e8" />
+					</HorizontalLayout>	
+					<HorizontalLayout enabled="true" width="886" height="60">
+						<Label text="法人代表" float="true" pos="164,10,0,0" enabled="true" width="80" height="40" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="left" />
+						<Edit name="EditClinicChiefOnClinicInfo" float="true" pos="302,12,0,0" enabled="true" width="290" height="36" bkimage="Text/edit-appoint.png" textpadding="20,0,0,0" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="2" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="1">
+						<Label text="" float="true" pos="145,0,0,0"  width="565" height="1" bkcolor="#ffe3e4e8" />
+					</HorizontalLayout>	
+					<HorizontalLayout enabled="true" width="886" height="60">
+						<Label text="身份证号码" float="true" pos="164,10,0,0" enabled="true" width="80" height="40" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="left" />
+						<Edit name="EditClinicIDCardOnClinicInfo" float="true" pos="302,12,0,0" enabled="true" width="290" height="36" bkimage="Text/edit-appoint.png" textpadding="20,0,0,0" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="2" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="1">
+						<Label text="" float="true" pos="145,0,0,0"  width="565" height="1" bkcolor="#ffe3e4e8" />
+					</HorizontalLayout>	
+					<HorizontalLayout enabled="true" width="700" height="212">
+						<Label text="营业许可证书" float="true" pos="164,10,0,0" enabled="true" width="150" height="40" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="left" />
+						<Button name="ButtonUploadNewLicense" text="点击选择图片" font="1" textcolor="#FF004986" float="true" pos="302,21,0,0" enabled="true" bordersize="1" bordercolor="#FFD2D2D2" width="239" height="170"  />
+						<Label text="图像大小不能超过5M。" float="true" pos="552,10,0,0" enabled="true" width="200" height="40" textcolor="#FFeb6877" disabledtextcolor="#FFA7A6AA" font="10" align="left" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="1">
+						<Label text="" float="true" pos="145,0,0,0"  width="565" height="1" bkcolor="#ffe3e4e8" />
+					</HorizontalLayout>	
+					<HorizontalLayout enabled="true" width="700" height="212">
+						<Label text="诊所实景图片" float="true" pos="164,10,0,0" enabled="true" width="150" height="40" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="left" />
+						<Button name="ButtonUploadNewPhoto" text="点击选择图片" font="1" textcolor="#FF004986" float="true" pos="302,21,0,0" enabled="true" bordersize="1" bordercolor="#FFD2D2D2" width="239" height="170"  />
+						<Label text="图像大小不能超过5M。" float="true" pos="552,10,0,0" enabled="true" width="200" height="40" textcolor="#FFeb6877" disabledtextcolor="#FFA7A6AA" font="10" align="left" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="1">
+						<Label text="" float="true" pos="145,0,0,0"  width="565" height="1" bkcolor="#ffe3e4e8" />
+					</HorizontalLayout>	
+					<HorizontalLayout enabled="true" width="700" height="212">
+						<Label text="医师执业许可证书" float="true" pos="164,10,0,0" enabled="true" width="138" height="40" textcolor="#FF313131" disabledtextcolor="#FFA7A6AA" font="0" align="left" />
+						<Button name="ButtonUploadNewDoctorLicense" text="点击选择图片" font="1" textcolor="#FF004986" float="true" pos="302,21,0,0" enabled="true" bordersize="1" bordercolor="#FFD2D2D2" width="239" height="170"  />
+						<Label text="图像大小不能超过5M。" float="true" pos="552,10,0,0" enabled="true" width="200" height="40" textcolor="#FFeb6877" disabledtextcolor="#FFA7A6AA" font="10" align="left" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="1">
+						<Label text="" float="true" pos="145,0,0,0"  width="565" height="1" bkcolor="#ffe3e4e8" />
+					</HorizontalLayout>	
+					<HorizontalLayout enabled="true" width="800" height="40">
+						<Label text="图像较大时上传时间较长，请耐心等待，上传完毕后会自动跳转到待审核页面。" float="true" pos="10,10,0,0" enabled="true" width="866" height="20" textcolor="#FFeb6877" disabledtextcolor="#FFA7A6AA" font="10" align="center" />
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true" width="886" height="67">
+						<Button name="ButtonReferClinicInfo" float="true" pos="366,37,0,0" enabled="true" width="64" height="30" bkimage="Button/cont-btn-modify-clinic.png" />
+						<Button name="ButtonCancelReferClinicInfo" float="true" pos="436,37,0,0" enabled="true" width="64" height="30" bkimage="Button/cont-btn-clinic-cancel.png" />
+					</HorizontalLayout>	
+					<HorizontalLayout enabled="true" width="886" height="60"/>
+				</VerticalLayout>
+			</VerticalLayout>
+			</TabLayout>
+			</VerticalLayout>
+		</VerticalLayout>
+	</VerticalLayout>
+</Window>

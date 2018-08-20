@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="140,56">
+    <VerticalLayout enabled="true" width="140" height="56" >  
+		<CheckBox name="CheckChooseFreeTimeOnTimeItem" text="" textcolor="#FF313131" float="true" pos="0,0,0,0" font="0" height="46" width="130" selectedimage="file='CheckBox/time-bg-sel.png'" normalimage="file='CheckBox/time-bg.png'" />
+    </VerticalLayout>
+</Window>
